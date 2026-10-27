@@ -12,7 +12,7 @@
   <a href="https://lanierc.github.io/zelixos#download">
     <img src="https://img.shields.io/badge/Download-ISO-green?style=for-the-badge">
   </a>
-  <img src="https://img.shields.io/badge/Version-0.5-orange?style=for-the-badge">
+  <img src="https://img.shields.io/badge/Version-1.0.0-orange?style=for-the-badge">
   <img src="https://img.shields.io/badge/Base-Arch%20Linux-blue?style=for-the-badge">
   <img src="https://img.shields.io/badge/Desktop-KDE%20Plasma-blueviolet?style=for-the-badge">
   <img src="https://img.shields.io/badge/License-GPL--3.0-lightgrey?style=for-the-badge">
@@ -109,7 +109,7 @@ ZelixOS follows a rolling-release model:
 
 | Version | Codename   | Status   | Release |
 | ------- | ---------- | -------- | ------- |
-| 26.1    | Aurora     | Stable   | 2026 Q2 |
+| 1.0.0   | Aurora     | Stable   | 2026 Q4 |
 | 0.4     | Metavision | Stable   | 2025 Q4 |
 | 0.3     | Metavision | Stable   | 2025 Q3 |
 | 0.2     | Metavision | Unstable | 2025 Q2 |
