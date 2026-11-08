@@ -1,0 +1,125 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Zelix Installer — ZelixOS Documentation</title>
+	<meta name="description" content="Installation, configuration, and troubleshooting documentation for ZelixOS.">
+	<meta name="theme-color" content="#0b0b0c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="docs.css">
+	<script src="docs-search-index.js" defer></script>
+	<script src="docs.js" defer></script>
+	<script src="site-language.js" defer></script>
+</head>
+<body class="docs-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+	<header class="site-header docs-header">
+		<div class="container docs-header-inner">
+			<a class="brand" href="https://zelixos.com/" aria-label="ZelixOS home">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+				<span>ZelixOS</span>
+			</a>
+			<nav class="docs-primary-nav" aria-label="Main">
+				<a class="docs-top-link" href="https://zelixos.com/">Home</a>
+				<a class="docs-top-link" href="https://zelixos.com/blog/">Blog</a>
+				<a class="docs-top-link" href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a>
+			</nav>
+			<div class="docs-header-actions">
+				<a class="btn btn-outline-strong btn-sm docs-download-link" href="https://zelixos.com/download/">Download</a>
+				<button class="docs-top-link site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button>
+				<button class="docs-mobile-toggle" type="button" aria-expanded="false" aria-controls="docs-sidebar">Menu</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="docs-shell">
+		<aside class="docs-sidebar" id="docs-sidebar" aria-label="Documentation navigation">
+			<div class="docs-search-wrap">
+				<label class="visually-hidden" for="docs-search">Search documentation</label>
+				<div class="docs-search-field">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+					<input id="docs-search" type="search" placeholder="Search documentation" autocomplete="off">
+					<kbd>Ctrl K</kbd>
+				</div>
+				<div class="docs-search-results" id="docs-search-results" role="listbox" aria-label="Search results" hidden></div>
+			</div>
+			<nav class="docs-nav">
+				<p class="docs-nav-label">Documentation</p>
+				<a href="index.html#overview" class="docs-nav-link is-active">Overview</a>
+				<p class="docs-nav-label">Getting started</p>
+				<a href="docs-introduction.html#introduction" class="docs-nav-link">Why ZelixOS?</a>
+				<a href="docs-requirements.html#requirements" class="docs-nav-link">System requirements</a>
+				<a href="docs-download.html#download" class="docs-nav-link">Download and verify</a>
+				<p class="docs-nav-label">Installation</p>
+				<a href="docs-usb-prep.html#usb-prep" class="docs-nav-link">Prepare installation media</a>
+				<a href="docs-installer.html#installer" class="docs-nav-link">Zelix Installer</a>
+				<a href="docs-post-install.html#post-install" class="docs-nav-link">Post-installation</a>
+				<a href="docs-boot-recovery.html#boot-recovery" class="docs-nav-link">Boot and recovery</a>
+				<p class="docs-nav-label">Using ZelixOS</p>
+				<a href="docs-desktops.html#desktops" class="docs-nav-link">Desktop environments</a>
+				<a href="docs-desktop-plasma.html#desktop-plasma" class="docs-nav-link docs-nav-sublink">KDE Plasma</a>
+				<a href="docs-desktop-gnome.html#desktop-gnome" class="docs-nav-link docs-nav-sublink">GNOME</a>
+				<a href="docs-desktop-xfce.html#desktop-xfce" class="docs-nav-link docs-nav-sublink">Xfce</a>
+				<a href="docs-desktop-hyprland.html#desktop-hyprland" class="docs-nav-link docs-nav-sublink">Hyprland</a>
+				<a href="docs-desktop-sway.html#desktop-sway" class="docs-nav-link docs-nav-sublink">Sway</a>
+				<a href="docs-desktop-i3.html#desktop-i3" class="docs-nav-link docs-nav-sublink">i3</a>
+				<a href="docs-desktop-bspwm.html#desktop-bspwm" class="docs-nav-link docs-nav-sublink">bspwm</a>
+				<a href="docs-themes.html#themes" class="docs-nav-link">ZelixOS visual themes</a>
+				<a href="docs-app-install.html#app-install" class="docs-nav-link">Install applications</a>
+				<a href="docs-tools.html#tools" class="docs-nav-link">Zelix tools</a>
+				<a href="docs-packages.html#packages" class="docs-nav-link">Packages and AUR</a>
+				<a href="docs-maintenance.html#maintenance" class="docs-nav-link">System maintenance</a>
+				<a href="docs-hardware.html#hardware" class="docs-nav-link">Hardware and drivers</a>
+				<a href="docs-gaming.html#gaming" class="docs-nav-link">Gaming</a>
+				<a href="docs-troubleshooting.html#troubleshooting" class="docs-nav-link">Troubleshooting</a>
+			</nav>
+			<div class="docs-sidebar-footer"><span class="docs-status-dot" aria-hidden="true"></span>ZelixOS Aurora documentation</div>
+		</aside>
+
+		<main class="docs-main" id="main-content">
+			<div class="docs-content">
+				<nav class="docs-breadcrumb" aria-label="Breadcrumb"><a href="https://zelixos.com/">ZelixOS</a><span aria-hidden="true">/</span><a href="index.html#overview">Documentation</a><span aria-hidden="true">/</span><a id="docs-breadcrumb-group" href="index.html#overview">Overview</a><span aria-hidden="true">/</span><span id="docs-breadcrumb-current" aria-current="page">Overview</span></nav>
+				<section class="docs-section" id="installer" data-title="Zelix Installer" data-group="Installation">
+					<p class="eyebrow">Installation · Guided setup</p><h2>Zelix Installer</h2>
+					<p>ZelixOS 1.0.0 includes the Zelix Installer, a graphical setup tool built around the official <code>archinstall</code> library. In the live environment, connect to the internet and open <strong>Install ZelixOS</strong> from the desktop.</p>
+					<figure class="docs-inline-figure"><img src="images/Zelixins SS.png" alt="ZelixOS Installer welcome screen with setup steps and language selection" loading="lazy"><figcaption>The Zelix Installer welcome screen, with the installation stages listed in the sidebar.</figcaption></figure>
+					<div class="docs-timeline"><article><span>01</span><div><h3>Welcome and system scan</h3><p>The installer checks basic hardware, boot mode, and network availability. Resolve connection issues before continuing.</p></div></article><article><span>02</span><div><h3>Select a desktop and greeter</h3><p>Choose from the desktop options presented by your installer, including KDE Plasma, GNOME, Xfce, Hyprland, Sway, i3, or bspwm. Display-manager choices may include SDDM, GDM, LightDM, or Ly. The installer also lets you choose whether an AUR helper will be installed. Select it only if you plan to use AUR packages.</p></div></article><article><span>03</span><div><h3>Select the disk and bootloader</h3><p>Review the detected NVMe, SSD, or HDD devices and choose the target carefully. Configure the available bootloader option, such as systemd-boot or GRUB. Choose the filesystem and layout shown by your installer; check each formatting action in its final summary.</p></div></article><article><span>04</span><div><h3>Configure accounts</h3><p>Set the hostname, a strong root password, and your everyday user account. Keep credentials private and store them securely.</p></div></article><article><span>05</span><div><h3>Install and review progress</h3><p>Confirm the configuration before starting. The installer shows a live log while packages are downloaded and installed; do not power off during this process.</p></div></article></div>
+					<h3 class="docs-subheading">Before you confirm</h3><ul class="docs-bullet-list"><li>Check that the selected target is the intended disk, especially when multiple drives are attached.</li><li>Review every partition marked for formatting. If another operating system must remain, do not continue until its partitions are preserved.</li><li>Check boot mode, desktop choice, user account, and the optional AUR helper choice in the final summary.</li></ul>
+					<div class="docs-callout docs-callout-warning"><strong>Review the disk summary</strong><p>Disk formatting is destructive. If you need to preserve another operating system or existing files, stop and verify the partition plan before starting.</p></div>
+					<div data-policy-language="en">
+						<article class="docs-guide"><h3>Installing on an empty dedicated disk</h3><p>Back up any data that might still be on the disk. In the installer, compare the disk model and capacity with the physical drive before selecting it. Review the final summary to see which partitions will be created or formatted. Confirm only when the entire selected disk may be used for ZelixOS.</p></article>
+						<article class="docs-guide"><h3>Keeping another operating system</h3><p>Make a full backup of that system first. Identify its disk and EFI partition before opening the installer. If the current installer does not show a partition layout that clearly preserves them, stop; do not guess at a destructive option. Using a separate disk can simplify the layout, but you still need to check which disk receives the boot entry.</p></article>
+						<article class="docs-guide"><h3>If installation stops</h3><p>Stay in the live session, keep the network connected, and copy the exact stage and error message. Note which desktop, bootloader, disk, and optional AUR helper choices were made. Avoid restarting or reformatting until you have checked the logs shown by Zelix Installer and identified the failed step.</p></article>
+					</div>
+					<div data-policy-language="tr" hidden>
+						<article class="docs-guide"><h3>Boş ve yalnızca ZelixOS’a ayrılmış diske kurulum</h3><p>Diskte hâlâ bulunabilecek verileri yedekleyin. Yükleyicide disk modelini ve kapasitesini fiziksel sürücüyle karşılaştırıp hedefi seçin. Son özette hangi bölümlerin oluşturulacağını veya biçimlendirileceğini inceleyin. Yalnızca seçilen diskin tamamı ZelixOS için kullanılabiliyorsa onaylayın.</p></article>
+						<article class="docs-guide"><h3>Başka bir işletim sistemini koruyarak kurulum</h3><p>Önce o sistemin tam yedeğini alın. Yükleyiciyi açmadan diskini ve EFI bölümünü belirleyin. Mevcut yükleyici onları açıkça koruyan bir bölüm düzeni göstermiyorsa durun; veri silecek bir seçeneği tahmin ederek kullanmayın. Ayrı disk düzeni sadeleştirebilir, ancak önyükleme girdisinin hangi diske yazılacağını yine de kontrol edin.</p></article>
+						<article class="docs-guide"><h3>Kurulum durursa</h3><p>Canlı oturumda kalın, ağ bağlantısını açık tutun ve aşama ile hata iletisini aynen kaydedin. Seçilen masaüstünü, önyükleyiciyi, diski ve isteğe bağlı AUR yardımcısını not edin. Zelix Yükleyici’nin gösterdiği günlükleri inceleyip başarısız adımı belirlemeden yeniden başlatmayın veya diski tekrar biçimlendirmeyin.</p></article>
+					</div>
+                    <div data-policy-language="en" lang="en" data-search-extra>
+                        <h3 class="docs-subheading">A practical installation walkthrough</h3>
+                        <article class="docs-guide"><h3>1. Prepare and start the live session</h3><p>Back up the files you need, check the <a href="docs-requirements.html#requirements">system requirements</a>, and <a href="docs-download.html#download">verify the downloaded ISO</a>. Write it to a USB drive using the <a href="docs-usb-prep.html#usb-prep">installation media guide</a>. Boot from the USB using your firmware's boot menu. Connect to the internet in the live desktop and confirm that a website opens before starting Install ZelixOS.</p></article>
+                        <article class="docs-guide"><h3>2. Identify the target disk</h3><p>Disconnect unnecessary external drives if practical. In a terminal, <code>lsblk -o NAME,SIZE,MODEL,FSTYPE,MOUNTPOINTS</code> lists disks and partitions; use the model and size together to identify the target. This command only displays information. The live USB also appears in the list, so do not select a device based on its name alone.</p><div class="docs-code"><code>lsblk -o NAME,SIZE,MODEL,FSTYPE,MOUNTPOINTS</code></div></article>
+                        <article class="docs-guide"><h3>3. Review setup choices</h3><p>Choose the language, desktop, login manager, disk layout, bootloader and account options offered by your installer version. Check that the selected disk and every formatting action match your plan. If preserving an existing system, verify its partitions and EFI partition will be retained; stop if the summary does not make this clear. Store the credentials somewhere secure.</p></article>
+                        <article class="docs-guide"><h3>4. Install, then start the installed system</h3><p>Read the final summary before confirming. Keep power and internet connected while the installer runs. Once it reports success, restart and remove the USB when appropriate. Select the installed system in the firmware boot menu if needed, then sign in with the account you created. Continue with <a href="docs-post-install.html#post-install">post-installation</a>; if it does not boot, see <a href="docs-boot-recovery.html#boot-recovery">boot and recovery</a>.</p></article>
+                        <article class="docs-guide"><h3>When something goes wrong</h3><p>Record the exact message and installation stage, along with the ISO version, target disk, boot mode, desktop and bootloader choices. Check the connection and available space, then consult <a href="docs-troubleshooting.html#troubleshooting">troubleshooting</a>. Do not share passwords or private details from logs.</p></article>
+                    </div>
+                    <div data-policy-language="tr" lang="tr" data-search-extra hidden>
+                        <h3 class="docs-subheading">Adım adım kurulum</h3>
+                        <article class="docs-guide"><h3>1. Hazırlık ve canlı oturum</h3><p>Gerekli dosyalarınızı yedekleyin, <a href="docs-requirements.html#requirements">sistem gereksinimlerini</a> kontrol edin ve <a href="docs-download.html#download">indirdiğiniz ISO’yu doğrulayın</a>. <a href="docs-usb-prep.html#usb-prep">Kurulum medyası rehberiyle</a> USB hazırlayın. Bilgisayarın önyükleme menüsünden USB’yi başlatın. Canlı masaüstünde internete bağlanın ve ZelixOS kurulumunu açmadan önce bir web sitesinin yüklendiğini doğrulayın.</p></article>
+                        <article class="docs-guide"><h3>2. Hedef diski belirleyin</h3><p>Mümkünse gerekli olmayan harici sürücüleri çıkarın. Terminalde <code>lsblk -o NAME,SIZE,MODEL,FSTYPE,MOUNTPOINTS</code> diskleri ve bölümleri listeler; hedefi belirlemek için model ve kapasiteyi birlikte kontrol edin. Bu komut yalnızca bilgi gösterir. Canlı USB de listede görünür; yalnızca aygıt adına bakarak seçim yapmayın.</p><div class="docs-code"><code>lsblk -o NAME,SIZE,MODEL,FSTYPE,MOUNTPOINTS</code></div></article>
+                        <article class="docs-guide"><h3>3. Kurulum seçimlerini gözden geçirin</h3><p>Yükleyici sürümünüzün sunduğu dil, masaüstü, giriş yöneticisi, disk düzeni, önyükleyici ve hesap seçeneklerini belirleyin. Seçilen diskin ve her biçimlendirme işleminin planınıza uyduğunu kontrol edin. Başka bir sistemi koruyorsanız bölümlerinin ve EFI bölümünün korunacağını doğrulayın; özet açık değilse durun. Giriş bilgilerinizi güvenli bir yerde saklayın.</p></article>
+                        <article class="docs-guide"><h3>4. Kurun ve kurulu sistemi başlatın</h3><p>Onaylamadan önce son özeti okuyun. Kurulum sırasında güç ve internet bağlantısını koruyun. Başarı bildirildikten sonra yeniden başlatın ve uygun zamanda USB’yi çıkarın. Gerekirse önyükleme menüsünden kurulu sistemi seçin ve oluşturduğunuz hesapla giriş yapın. <a href="docs-post-install.html#post-install">Kurulum sonrası</a> adımlarla devam edin; sistem açılmazsa <a href="docs-boot-recovery.html#boot-recovery">önyükleme ve kurtarma</a> rehberine bakın.</p></article>
+                        <article class="docs-guide"><h3>Bir sorunla karşılaşırsanız</h3><p>Hata mesajını ve kurulum aşamasını aynen kaydedin; ISO sürümünü, hedef diski, önyükleme kipini, masaüstü ve önyükleyici seçimlerini not edin. Bağlantıyı ve boş alanı kontrol edip <a href="docs-troubleshooting.html#troubleshooting">sorun giderme</a> rehberine bakın. Günlüklerdeki parolaları ve özel bilgileri paylaşmayın.</p></article>
+                    </div>
+				</section>
+				<footer class="docs-footer"><p>Documentation for ZelixOS Aurora</p><div><a href="https://zelixos.com/">ZelixOS home</a><a href="https://zelixos.com/blog/">Blog</a><a href="https://zelixos.com/download/">Downloads</a><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></div></footer>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

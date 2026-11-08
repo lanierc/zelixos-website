@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZelixOS Aurora 1.0.0 — Release Notes</title>
+  <meta name="description" content="ZelixOS Aurora 1.0.0 release notes: desktop refinements, updated system tools, installation requirements, and download verification.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="blog.css">
+  <script src="../site-language.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="https://zelixos.com/">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="#f2f2f3" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="#f2f2f3" stroke-width="1.5" stroke-linecap="square"/></svg>
+        ZelixOS
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="https://zelixos.com/">Home</a>
+        <a href="https://zelixos.com/index.html#features">Features</a>
+        <a href="https://zelixos.com/download/">Download</a>
+        <a href="https://docs.zelixos.com/">Wiki</a>
+        <a href="./">Blog</a>
+        <a href="https://distrowatch.com/table.php?distribution=zelixos" target="_blank" rel="noopener">DistroWatch</a>
+        <a href="https://zelixos.com/about/">About</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-outline-strong btn-sm" href="https://zelixos.com/download/">Download</a>
+        <button class="btn btn-outline btn-sm site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="band page-head">
+      <div class="container stack gap-24">
+        <a class="release-back-link" href="./" data-release-back>← Back to blog</a>
+        <div data-policy-language="en" lang="en">
+          <div class="release-meta"><span class="pill">Release notes</span><time datetime="2026-10-27">October 27, 2026</time></div>
+          <h1 class="display display-md release-title">ZelixOS Aurora 1.0.0</h1>
+          <p class="lead">After extensive testing and polishing, the full ZelixOS Aurora 1.0.0 release is here. It refines our monochrome desktop, updates core tools, and provides a clean Arch Linux foundation.</p>
+        </div>
+        <div data-policy-language="tr" lang="tr" hidden>
+          <div class="release-meta"><span class="pill">Sürüm notları</span><time datetime="2026-10-27">27 Ekim 2026</time></div>
+          <h1 class="display display-md release-title">ZelixOS Aurora 1.0.0</h1>
+          <p class="lead">Kapsamlı test ve iyileştirmelerin ardından ZelixOS Aurora 1.0.0 tam sürümü yayınlandı. Bu sürüm tek renkli masaüstü deneyimini geliştiriyor, temel araçları güncelliyor ve Arch Linux tabanında sade bir başlangıç sunuyor.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="band section release-content">
+      <div class="container stack gap-40" data-policy-language="en" lang="en">
+        <p class="release-intro">Aurora 1.0.0 is a complete release focused on a polished out-of-the-box desktop, more capable Zelix utilities, and a lightweight foundation that leaves software choices in your hands.</p>
+
+        <section class="release-section">
+          <span class="eyebrow">01 · Desktop &amp; aesthetics</span>
+          <h2 class="title title-sm">A calmer, more consistent workspace</h2>
+          <div class="release-feature-grid">
+            <article class="card"><h3>Monochrome KDE Plasma</h3><p>OLED-friendly dark styling has been retuned with bright accents and more consistent contrast across panels and widgets.</p></article>
+            <article class="card"><h3>A streamlined desktop</h3><p>Default launchers have been cleaned up to keep the initial workspace focused and minimal.</p></article>
+            <article class="card"><h3>90 curated wallpapers</h3><p>The Zelix Extras wallpaper collection joins the default minimal wallpaper, ready to choose from desktop settings.</p></article>
+            <article class="card"><h3>Updated boot and login themes</h3><p>GRUB, Plymouth, and SDDM carry the Aurora look from boot selection through startup to the login screen.</p></article>
+          </div>
+          <div class="release-gallery release-theme-gallery" aria-label="Aurora desktop, boot and login themes">
+            <figure><img src="../images/Zelix Desktop SS.png" alt="ZelixOS Aurora monochrome KDE Plasma desktop" loading="lazy"><figcaption><strong>KDE Plasma</strong><span>Monochrome desktop with a focused, minimal layout.</span></figcaption></figure>
+            <figure><img src="../images/Grub SS.png" alt="ZelixOS GRUB boot menu with updated branding" loading="lazy"><figcaption><strong>GRUB</strong><span>Branded boot menu with a refreshed backdrop.</span></figcaption></figure>
+            <figure><img src="../images/Plymouth SS.png" alt="ZelixOS logo on the Plymouth startup screen" loading="lazy"><figcaption><strong>Plymouth</strong><span>ZelixOS identity during system startup.</span></figcaption></figure>
+            <figure><img src="../images/SDDM SS.png" alt="ZelixOS SDDM login screen" loading="lazy"><figcaption><strong>SDDM</strong><span>Matching sign-in screen before the desktop session.</span></figcaption></figure>
+          </div>
+        </section>
+
+        <section class="release-section">
+          <span class="eyebrow">02 · In-house applications &amp; tools</span>
+          <h2 class="title title-sm">Useful tools, refined</h2>
+          <div class="release-tool-list">
+            <article class="card"><div class="release-tool-heading"><h3>Zelix Installer <code>zelixins</code> v1.1.6</h3><span class="pill">Installer</span></div><ul><li>English is the default language; Turkish remains available on the welcome screen.</li><li>Dialog button states now retain readable dark-theme contrast during network checks.</li><li>Password confirmation and stricter username validation help catch setup errors earlier.</li><li>Post-install steps for local repositories and desktop setup have been improved.</li></ul></article>
+            <article class="card"><div class="release-tool-heading"><h3>Zelix Updater v1.0.4</h3><span class="pill">System updates</span></div><p>A dedicated, lightweight graphical utility for reviewing system package updates and synchronizing pacman repositories without opening a terminal.</p></article>
+            <article class="card"><div class="release-tool-heading"><h3>Zelix CLI</h3><span class="pill">Terminal</span></div><p>The <code>zelix</code> command-line utility now has English localization and a built-in language switch: <code>zelix lang [en|tr]</code>.</p></article>
+            <article class="card"><div class="release-tool-heading"><h3>Fastfetch</h3><span class="pill">Ready to use</span></div><p>A minimal system information summary is preconfigured for the terminal.</p></article>
+          </div>
+          <figure class="release-wide-figure"><img src="../images/ZelixOS Tools SS.png" alt="ZelixOS utilities and terminal" loading="lazy"><figcaption>ZelixOS graphical tools and terminal workflow.</figcaption></figure>
+        </section>
+
+        <section class="release-section">
+          <span class="eyebrow">03 · A clean-slate experience</span>
+          <h2 class="title title-sm">Your system, your choices</h2>
+          <p>ZelixOS keeps its base image focused: no arbitrary third-party bundles, media suites, or heavyweight default applications. The ISO contains the core utilities needed for a responsive desktop, while Zelix Hello lets you install the daily applications and tools you actually want.</p>
+          <figure class="release-wide-figure"><img src="../images/Zelix Hello SS.png" alt="Zelix Hello welcome hub" loading="lazy"><figcaption>Use Zelix Hello to add applications when you need them.</figcaption></figure>
+        </section>
+
+        <section class="release-section">
+          <span class="eyebrow">04 · Installation</span>
+          <h2 class="title title-sm">Requirements &amp; preparation</h2>
+          <dl class="release-specs"><div><dt>Architecture</dt><dd>x86_64 (64-bit)</dd></div><div><dt>Boot mode</dt><dd>UEFI recommended; Secure Boot disabled</dd></div><div><dt>Network</dt><dd>Active internet required during setup to fetch and verify current package signatures</dd></div><div><dt>Memory</dt><dd>2 GB minimum · 4 GB or more recommended</dd></div><div><dt>Storage</dt><dd>20 GB free space minimum</dd></div></dl>
+          <div class="docs-callout docs-callout-warning"><strong>Back up before installation</strong><p>Writing an ISO erases the selected USB drive, and installing can change disk partitions. Verify the target device and back up important data first.</p></div>
+        </section>
+
+        <section class="release-section">
+          <span class="eyebrow">05 · Verify your download</span>
+          <h2 class="title title-sm">Check the ISO before flashing</h2>
+          <p>From the directory containing the downloaded ISO, calculate its SHA-256 digest:</p>
+          <pre class="release-code"><code>sha256sum ZelixOS-*.iso</code></pre>
+          <p>Compare the result with the checksum published alongside the ZelixOS Aurora 1.0.0 ISO. A checksum from another release will not match.</p>
+        </section>
+
+        <div class="release-cta">
+          <div><h2 class="title title-sm">Ready to try Aurora?</h2><p class="muted">Get the current ISO and follow the installation guide.</p></div>
+          <a class="btn btn-primary btn-lg" href="https://zelixos.com/download/">Download ZelixOS</a>
+        </div>
+      </div>
+
+      <div class="container stack gap-40" data-policy-language="tr" lang="tr" hidden>
+        <p class="release-intro">Aurora 1.0.0; kurulumdan hemen sonra kullanıma hazır, özenle düzenlenmiş bir masaüstü, daha yetenekli Zelix araçları ve yazılım tercihlerini size bırakan hafif bir temel sunan tam sürümdür.</p>
+
+        <section class="release-section">
+          <span class="eyebrow">01 · Masaüstü ve görünüm</span>
+          <h2 class="title title-sm">Daha sade ve tutarlı bir çalışma alanı</h2>
+          <div class="release-feature-grid">
+            <article class="card"><h3>Tek renkli KDE Plasma</h3><p>OLED dostu koyu görünüm; paneller ve bileşenler arasında daha tutarlı kontrast ve parlak vurgularla yeniden düzenlendi.</p></article>
+            <article class="card"><h3>Sadeleştirilmiş masaüstü</h3><p>İlk çalışma alanının odaklı ve yalın kalması için varsayılan başlatıcılar gözden geçirildi.</p></article>
+            <article class="card"><h3>Özenle seçilmiş 90 duvar kâğıdı</h3><p>Zelix Extras koleksiyonu, varsayılan sade duvar kâğıdına eklenerek masaüstü ayarlarından seçilebilir hale geldi.</p></article>
+            <article class="card"><h3>Güncellenen açılış ve giriş temaları</h3><p>GRUB, Plymouth ve SDDM; Aurora görünümünü önyükleme menüsünden sistem açılışına ve giriş ekranına kadar sürdürüyor.</p></article>
+          </div>
+          <div class="release-gallery release-theme-gallery" aria-label="Aurora masaüstü, önyükleme ve giriş temaları">
+            <figure><img src="../images/Zelix Desktop SS.png" alt="ZelixOS Aurora tek renkli KDE Plasma masaüstü" loading="lazy"><figcaption><strong>KDE Plasma</strong><span>Odaklı ve sade düzene sahip tek renkli masaüstü.</span></figcaption></figure>
+            <figure><img src="../images/Grub SS.png" alt="Güncellenen ZelixOS markalı GRUB önyükleme menüsü" loading="lazy"><figcaption><strong>GRUB</strong><span>Yenilenen arka plana sahip markalı önyükleme menüsü.</span></figcaption></figure>
+            <figure><img src="../images/Plymouth SS.png" alt="Plymouth açılış ekranında ZelixOS logosu" loading="lazy"><figcaption><strong>Plymouth</strong><span>Sistem açılırken ZelixOS görsel kimliği.</span></figcaption></figure>
+            <figure><img src="../images/SDDM SS.png" alt="ZelixOS SDDM giriş ekranı" loading="lazy"><figcaption><strong>SDDM</strong><span>Masaüstü oturumu öncesinde aynı tasarıma sahip giriş ekranı.</span></figcaption></figure>
+          </div>
+        </section>
+
+        <section class="release-section">
+          <span class="eyebrow">02 · Zelix uygulamaları ve araçları</span>
+          <h2 class="title title-sm">Geliştirilmiş kullanışlı araçlar</h2>
+          <div class="release-tool-list">
+            <article class="card"><div class="release-tool-heading"><h3>Zelix Installer <code>zelixins</code> v1.1.6</h3><span class="pill">Yükleyici</span></div><ul><li>Varsayılan yükleyici dili artık İngilizce; Türkçe karşılama ekranından seçilebilir.</li><li>Ağ denetimleri sırasında diyalog düğmelerinin koyu temadaki kontrastı iyileştirildi.</li><li>Parola onayı ve daha sıkı kullanıcı adı denetimiyle kurulum hataları erkenden yakalanıyor.</li><li>Yerel depolar ve masaüstü kurulumu için kurulum sonrası adımlar geliştirildi.</li></ul></article>
+            <article class="card"><div class="release-tool-heading"><h3>Zelix Updater v1.0.4</h3><span class="pill">Sistem güncellemeleri</span></div><p>Terminal açmadan sistem paketi güncellemelerini incelemek ve pacman depolarını eşitlemek için özel, hafif bir grafik araç.</p></article>
+            <article class="card"><div class="release-tool-heading"><h3>Zelix CLI</h3><span class="pill">Terminal</span></div><p><code>zelix</code> komut satırı aracı artık İngilizce yerelleştirmeye ve yerleşik dil değiştirme komutuna sahip: <code>zelix lang [en|tr]</code>.</p></article>
+            <article class="card"><div class="release-tool-heading"><h3>Fastfetch</h3><span class="pill">Kullanıma hazır</span></div><p>Terminal için sade sistem bilgisi özeti önceden yapılandırıldı.</p></article>
+          </div>
+          <figure class="release-wide-figure"><img src="../images/ZelixOS Tools SS.png" alt="ZelixOS araçları ve terminal" loading="lazy"><figcaption>ZelixOS grafik araçları ve terminal deneyimi.</figcaption></figure>
+        </section>
+
+        <section class="release-section">
+          <span class="eyebrow">03 · Sade başlangıç deneyimi</span>
+          <h2 class="title title-sm">Sisteminiz, tercihleriniz</h2>
+          <p>ZelixOS temel kalıbını odaklı tutar: rastgele üçüncü taraf paketleri, medya yazılımı paketleri veya ağır varsayılan uygulamalar içermez. ISO, duyarlı bir masaüstü için gereken temel araçları sunar; Zelix Hello ile yalnızca kullanmak istediğiniz uygulama ve araçları kurabilirsiniz.</p>
+          <figure class="release-wide-figure"><img src="../images/Zelix Hello SS.png" alt="Zelix Hello karşılama merkezi" loading="lazy"><figcaption>İhtiyaç duyduğunuz uygulamaları Zelix Hello ile ekleyin.</figcaption></figure>
+        </section>
+
+        <section class="release-section">
+          <span class="eyebrow">04 · Kurulum</span>
+          <h2 class="title title-sm">Gereksinimler ve hazırlık</h2>
+          <dl class="release-specs"><div><dt>Mimari</dt><dd>x86_64 (64 bit)</dd></div><div><dt>Önyükleme modu</dt><dd>UEFI önerilir; Secure Boot kapalı olmalı</dd></div><div><dt>Ağ</dt><dd>Güncel paket imzalarını indirmek ve doğrulamak için kurulum sırasında etkin internet gerekir</dd></div><div><dt>Bellek</dt><dd>En az 2 GB · 4 GB veya üzeri önerilir</dd></div><div><dt>Depolama</dt><dd>En az 20 GB boş alan</dd></div></dl>
+          <div class="docs-callout docs-callout-warning"><strong>Kurulumdan önce yedek alın</strong><p>ISO yazma işlemi seçilen USB belleği siler; kurulum disk bölümlerini de değiştirebilir. Önce hedef aygıtı doğrulayın ve önemli verilerinizi yedekleyin.</p></div>
+        </section>
+
+        <section class="release-section">
+          <span class="eyebrow">05 · İndirdiğiniz dosyayı doğrulayın</span>
+          <h2 class="title title-sm">Yazdırmadan önce ISO’yu kontrol edin</h2>
+          <p>İndirilen ISO dosyasının bulunduğu dizinde SHA-256 özetini hesaplayın:</p>
+          <pre class="release-code"><code>sha256sum ZelixOS-*.iso</code></pre>
+          <p>Sonucu ZelixOS Aurora 1.0.0 ISO dosyasıyla birlikte yayımlanan sağlama toplamıyla karşılaştırın. Başka bir sürüme ait değer eşleşmez.</p>
+        </section>
+
+        <div class="release-cta">
+          <div><h2 class="title title-sm">Aurora’yı denemeye hazır mısınız?</h2><p class="muted">Güncel ISO’yu edinin ve kurulum kılavuzunu izleyin.</p></div>
+          <a class="btn btn-primary btn-lg" href="https://zelixos.com/download/">ZelixOS’u indir</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-about"><strong>ZelixOS</strong><p>A modern, independent Arch Linux distribution built with care and precision by CyberPlus Studios.</p></div>
+        <div class="footer-cols">
+          <div><h4>Product</h4><ul><li><a href="https://zelixos.com/index.html#features">Features</a></li><li><a href="https://zelixos.com/download/">Download</a></li><li><a href="https://zelixos.com/index.html#specs">Requirements</a></li></ul></div>
+          <div><h4>Resources</h4><ul><li><a href="https://docs.zelixos.com/">Documentation</a></li><li><a href="./">Blog</a></li><li><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://zelixos.com/about/">About</a></li></ul></div>
+          <div><h4>Legal</h4><ul><li><a href="https://zelixos.com/pp/">Privacy Policy</a></li><li><a href="https://zelixos.com/br/">Report a Bug</a></li></ul></div>
+        </div>
+      </div>
+      <p class="copyright">© 2026 ZelixOS by CyberPlus Studios. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

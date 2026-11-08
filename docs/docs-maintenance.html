@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>System maintenance — ZelixOS Documentation</title>
+	<meta name="description" content="Installation, configuration, and troubleshooting documentation for ZelixOS.">
+	<meta name="theme-color" content="#0b0b0c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="docs.css">
+	<script src="docs-search-index.js" defer></script>
+	<script src="docs.js" defer></script>
+	<script src="site-language.js" defer></script>
+</head>
+<body class="docs-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+	<header class="site-header docs-header">
+		<div class="container docs-header-inner">
+			<a class="brand" href="https://zelixos.com/" aria-label="ZelixOS home">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+				<span>ZelixOS</span>
+			</a>
+			<nav class="docs-primary-nav" aria-label="Main">
+				<a class="docs-top-link" href="https://zelixos.com/">Home</a>
+				<a class="docs-top-link" href="https://zelixos.com/blog/">Blog</a>
+				<a class="docs-top-link" href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a>
+			</nav>
+			<div class="docs-header-actions">
+				<a class="btn btn-outline-strong btn-sm docs-download-link" href="https://zelixos.com/download/">Download</a>
+				<button class="docs-top-link site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button>
+				<button class="docs-mobile-toggle" type="button" aria-expanded="false" aria-controls="docs-sidebar">Menu</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="docs-shell">
+		<aside class="docs-sidebar" id="docs-sidebar" aria-label="Documentation navigation">
+			<div class="docs-search-wrap">
+				<label class="visually-hidden" for="docs-search">Search documentation</label>
+				<div class="docs-search-field">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+					<input id="docs-search" type="search" placeholder="Search documentation" autocomplete="off">
+					<kbd>Ctrl K</kbd>
+				</div>
+				<div class="docs-search-results" id="docs-search-results" role="listbox" aria-label="Search results" hidden></div>
+			</div>
+			<nav class="docs-nav">
+				<p class="docs-nav-label">Documentation</p>
+				<a href="index.html#overview" class="docs-nav-link is-active">Overview</a>
+				<p class="docs-nav-label">Getting started</p>
+				<a href="docs-introduction.html#introduction" class="docs-nav-link">Why ZelixOS?</a>
+				<a href="docs-requirements.html#requirements" class="docs-nav-link">System requirements</a>
+				<a href="docs-download.html#download" class="docs-nav-link">Download and verify</a>
+				<p class="docs-nav-label">Installation</p>
+				<a href="docs-usb-prep.html#usb-prep" class="docs-nav-link">Prepare installation media</a>
+				<a href="docs-installer.html#installer" class="docs-nav-link">Zelix Installer</a>
+				<a href="docs-post-install.html#post-install" class="docs-nav-link">Post-installation</a>
+				<a href="docs-boot-recovery.html#boot-recovery" class="docs-nav-link">Boot and recovery</a>
+				<p class="docs-nav-label">Using ZelixOS</p>
+				<a href="docs-desktops.html#desktops" class="docs-nav-link">Desktop environments</a>
+				<a href="docs-desktop-plasma.html#desktop-plasma" class="docs-nav-link docs-nav-sublink">KDE Plasma</a>
+				<a href="docs-desktop-gnome.html#desktop-gnome" class="docs-nav-link docs-nav-sublink">GNOME</a>
+				<a href="docs-desktop-xfce.html#desktop-xfce" class="docs-nav-link docs-nav-sublink">Xfce</a>
+				<a href="docs-desktop-hyprland.html#desktop-hyprland" class="docs-nav-link docs-nav-sublink">Hyprland</a>
+				<a href="docs-desktop-sway.html#desktop-sway" class="docs-nav-link docs-nav-sublink">Sway</a>
+				<a href="docs-desktop-i3.html#desktop-i3" class="docs-nav-link docs-nav-sublink">i3</a>
+				<a href="docs-desktop-bspwm.html#desktop-bspwm" class="docs-nav-link docs-nav-sublink">bspwm</a>
+				<a href="docs-themes.html#themes" class="docs-nav-link">ZelixOS visual themes</a>
+				<a href="docs-app-install.html#app-install" class="docs-nav-link">Install applications</a>
+				<a href="docs-tools.html#tools" class="docs-nav-link">Zelix tools</a>
+				<a href="docs-packages.html#packages" class="docs-nav-link">Packages and AUR</a>
+				<a href="docs-maintenance.html#maintenance" class="docs-nav-link">System maintenance</a>
+				<a href="docs-hardware.html#hardware" class="docs-nav-link">Hardware and drivers</a>
+				<a href="docs-gaming.html#gaming" class="docs-nav-link">Gaming</a>
+				<a href="docs-troubleshooting.html#troubleshooting" class="docs-nav-link">Troubleshooting</a>
+			</nav>
+			<div class="docs-sidebar-footer"><span class="docs-status-dot" aria-hidden="true"></span>ZelixOS Aurora documentation</div>
+		</aside>
+
+		<main class="docs-main" id="main-content">
+			<div class="docs-content">
+				<nav class="docs-breadcrumb" aria-label="Breadcrumb"><a href="https://zelixos.com/">ZelixOS</a><span aria-hidden="true">/</span><a href="index.html#overview">Documentation</a><span aria-hidden="true">/</span><a id="docs-breadcrumb-group" href="index.html#overview">Overview</a><span aria-hidden="true">/</span><span id="docs-breadcrumb-current" aria-current="page">Overview</span></nav>
+				<section class="docs-section" id="maintenance" data-title="System maintenance" data-group="Using ZelixOS">
+					<p class="eyebrow">Rolling release</p><h2>System maintenance</h2>
+					<p>Back up personal files before major changes and keep your installation USB available. Read current release notes before a large update, then use Zelix Updater or <code>sudo pacman -Syu</code>. Let package operations finish and restart when a kernel or driver update requires it.</p>
+					<h3 class="docs-subheading">Check free space and configuration changes</h3>
+					<p>Low disk space can interrupt downloads and updates. Review free space with <code>df -h</code>. Package updates may place new configuration defaults in <code>.pacnew</code> files; compare these with your edited files and merge needed changes instead of blindly replacing either version.</p>
+					<div class="docs-code"><code>df -h</code></div>
+					<div class="docs-code"><code>sudo find /etc -name '*.pacnew' -print</code></div>
+					<h3 class="docs-subheading">When an update fails</h3>
+					<p>Record the exact error. Check network access, free space, and whether another package process is running. Resolve the cause before retrying a full update. Avoid deleting pacman lock files while a package operation is active.</p>
+					<div data-policy-language="en">
+						<article class="docs-guide"><h3>Before a large update</h3><p>Read the ZelixOS release notes and any relevant Arch news, back up important data, and ensure the system has enough free space and a stable connection. Run one complete update with Zelix Updater or <code>sudo pacman -Syu</code>. Do not run a second package manager while the first is working. Restart after kernel or driver updates when the tool asks for it.</p></article>
+						<article class="docs-guide"><h3>Back up what matters</h3><p>Keep a copy of personal files and important settings on another drive or trusted storage. A snapshot on the same disk is helpful for some configuration mistakes but will not survive that disk failing. Check that you can actually open a restored file before relying on a backup. Keep the live USB available for boot recovery.</p></article>
+						<article class="docs-guide"><h3>Review .pacnew files and the package cache</h3><p>When an updated package ships a new default configuration, pacman may create a <code>.pacnew</code> file. Compare it with your current file and merge the needed settings. Do not overwrite a working configuration blindly. The package cache can help with recovery; inspect its size before cleaning it. Use the Zelix CLI cleanup feature only after reading what your installed version does.</p><div class="docs-code"><code>sudo find /etc -name '*.pacnew' -print</code></div><div class="docs-code"><code>du -sh /var/cache/pacman/pkg</code></div></article>
+						<p><a href="https://wiki.archlinux.org/title/System_maintenance" target="_blank" rel="noopener">ArchWiki system maintenance</a></p>
+					</div>
+					<div data-policy-language="tr" hidden>
+						<article class="docs-guide"><h3>Büyük güncelleme öncesinde</h3><p>ZelixOS sürüm notlarını ve ilgili Arch duyurularını okuyun, önemli verileri yedekleyin; yeterli boş alan ve kararlı bağlantı sağlayın. Zelix Updater veya <code>sudo pacman -Syu</code> ile tek bir tam güncelleme yapın. İlki çalışırken ikinci paket yöneticisini başlatmayın. Araç gerektiğini belirttiğinde çekirdek veya sürücü güncellemesinden sonra yeniden başlatın.</p></article>
+						<article class="docs-guide"><h3>Önemli verileri yedekleme</h3><p>Kişisel dosyaların ve önemli ayarların bir kopyasını başka bir sürücüde veya güvenilir depolamada tutun. Aynı diskteki anlık görüntü bazı yapılandırma hatalarını geri alabilir, ancak disk bozulursa onu koruyamaz. Yedeğe güvenmeden önce geri yüklenen bir dosyayı gerçekten açabildiğinizi deneyin. Önyükleme kurtarması için canlı USB’yi saklayın.</p></article>
+						<article class="docs-guide"><h3>.pacnew dosyaları ve paket önbelleği</h3><p>Güncellenen paket yeni varsayılan yapılandırma sunduğunda pacman bir <code>.pacnew</code> dosyası oluşturabilir. Mevcut dosyanızla karşılaştırıp gerekli ayarları birleştirin. Çalışan yapılandırmanın üzerine düşünmeden yazmayın. Paket önbelleği kurtarmada işe yarayabilir; temizlemeden önce boyutunu inceleyin. Zelix CLI temizleme özelliğini yalnızca kurulu sürümün ne yaptığını okuduktan sonra kullanın.</p><div class="docs-code"><code>sudo find /etc -name '*.pacnew' -print</code></div><div class="docs-code"><code>du -sh /var/cache/pacman/pkg</code></div></article>
+						<p><a href="https://wiki.archlinux.org/title/System_maintenance" target="_blank" rel="noopener">ArchWiki sistem bakımı</a></p>
+					</div>
+				</section>
+				<footer class="docs-footer"><p>Documentation for ZelixOS Aurora</p><div><a href="https://zelixos.com/">ZelixOS home</a><a href="https://zelixos.com/blog/">Blog</a><a href="https://zelixos.com/download/">Downloads</a><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></div></footer>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

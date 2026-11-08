@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Xfce — ZelixOS Documentation</title>
+	<meta name="description" content="Installation, configuration, and troubleshooting documentation for ZelixOS.">
+	<meta name="theme-color" content="#0b0b0c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="docs.css">
+	<script src="docs-search-index.js" defer></script>
+	<script src="docs.js" defer></script>
+	<script src="site-language.js" defer></script>
+</head>
+<body class="docs-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+	<header class="site-header docs-header">
+		<div class="container docs-header-inner">
+			<a class="brand" href="https://zelixos.com/" aria-label="ZelixOS home">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+				<span>ZelixOS</span>
+			</a>
+			<nav class="docs-primary-nav" aria-label="Main">
+				<a class="docs-top-link" href="https://zelixos.com/">Home</a>
+				<a class="docs-top-link" href="https://zelixos.com/blog/">Blog</a>
+				<a class="docs-top-link" href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a>
+			</nav>
+			<div class="docs-header-actions">
+				<a class="btn btn-outline-strong btn-sm docs-download-link" href="https://zelixos.com/download/">Download</a>
+				<button class="docs-top-link site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button>
+				<button class="docs-mobile-toggle" type="button" aria-expanded="false" aria-controls="docs-sidebar">Menu</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="docs-shell">
+		<aside class="docs-sidebar" id="docs-sidebar" aria-label="Documentation navigation">
+			<div class="docs-search-wrap">
+				<label class="visually-hidden" for="docs-search">Search documentation</label>
+				<div class="docs-search-field">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+					<input id="docs-search" type="search" placeholder="Search documentation" autocomplete="off">
+					<kbd>Ctrl K</kbd>
+				</div>
+				<div class="docs-search-results" id="docs-search-results" role="listbox" aria-label="Search results" hidden></div>
+			</div>
+			<nav class="docs-nav">
+				<p class="docs-nav-label">Documentation</p>
+				<a href="index.html#overview" class="docs-nav-link is-active">Overview</a>
+				<p class="docs-nav-label">Getting started</p>
+				<a href="docs-introduction.html#introduction" class="docs-nav-link">Why ZelixOS?</a>
+				<a href="docs-requirements.html#requirements" class="docs-nav-link">System requirements</a>
+				<a href="docs-download.html#download" class="docs-nav-link">Download and verify</a>
+				<p class="docs-nav-label">Installation</p>
+				<a href="docs-usb-prep.html#usb-prep" class="docs-nav-link">Prepare installation media</a>
+				<a href="docs-installer.html#installer" class="docs-nav-link">Zelix Installer</a>
+				<a href="docs-post-install.html#post-install" class="docs-nav-link">Post-installation</a>
+				<a href="docs-boot-recovery.html#boot-recovery" class="docs-nav-link">Boot and recovery</a>
+				<p class="docs-nav-label">Using ZelixOS</p>
+				<a href="docs-desktops.html#desktops" class="docs-nav-link">Desktop environments</a>
+				<a href="docs-desktop-plasma.html#desktop-plasma" class="docs-nav-link docs-nav-sublink">KDE Plasma</a>
+				<a href="docs-desktop-gnome.html#desktop-gnome" class="docs-nav-link docs-nav-sublink">GNOME</a>
+				<a href="docs-desktop-xfce.html#desktop-xfce" class="docs-nav-link docs-nav-sublink">Xfce</a>
+				<a href="docs-desktop-hyprland.html#desktop-hyprland" class="docs-nav-link docs-nav-sublink">Hyprland</a>
+				<a href="docs-desktop-sway.html#desktop-sway" class="docs-nav-link docs-nav-sublink">Sway</a>
+				<a href="docs-desktop-i3.html#desktop-i3" class="docs-nav-link docs-nav-sublink">i3</a>
+				<a href="docs-desktop-bspwm.html#desktop-bspwm" class="docs-nav-link docs-nav-sublink">bspwm</a>
+				<a href="docs-themes.html#themes" class="docs-nav-link">ZelixOS visual themes</a>
+				<a href="docs-app-install.html#app-install" class="docs-nav-link">Install applications</a>
+				<a href="docs-tools.html#tools" class="docs-nav-link">Zelix tools</a>
+				<a href="docs-packages.html#packages" class="docs-nav-link">Packages and AUR</a>
+				<a href="docs-maintenance.html#maintenance" class="docs-nav-link">System maintenance</a>
+				<a href="docs-hardware.html#hardware" class="docs-nav-link">Hardware and drivers</a>
+				<a href="docs-gaming.html#gaming" class="docs-nav-link">Gaming</a>
+				<a href="docs-troubleshooting.html#troubleshooting" class="docs-nav-link">Troubleshooting</a>
+			</nav>
+			<div class="docs-sidebar-footer"><span class="docs-status-dot" aria-hidden="true"></span>ZelixOS Aurora documentation</div>
+		</aside>
+
+		<main class="docs-main" id="main-content">
+			<div class="docs-content">
+				<nav class="docs-breadcrumb" aria-label="Breadcrumb"><a href="https://zelixos.com/">ZelixOS</a><span aria-hidden="true">/</span><a href="index.html#overview">Documentation</a><span aria-hidden="true">/</span><a id="docs-breadcrumb-group" href="index.html#overview">Overview</a><span aria-hidden="true">/</span><span id="docs-breadcrumb-current" aria-current="page">Overview</span></nav>
+				<section class="docs-section" id="desktop-xfce" data-title="Xfce" data-group="Desktop guides">
+					<p class="eyebrow" data-policy-language="en">Desktop guides</p><p class="eyebrow" data-policy-language="tr" hidden>Masaüstü rehberleri</p><h2>Xfce</h2>
+					<div data-policy-language="en" lang="en"><article class="docs-guide" id="desktop-xfce-en"><h3>Xfce</h3><p>Xfce uses a classic panel, application menu, and configurable desktop. Its components are modular, so a missing panel does not always mean the whole session has failed. Use Settings Manager for displays, keyboard, appearance, and window behavior; use the panel's context menu to adjust launchers.</p><p><strong>Useful checks:</strong> Open Settings Manager with <code>xfce4-settings-manager</code>. If the panel alone has disappeared, run <code>xfce4-panel --restart</code> from a terminal in the Xfce session. If the desktop is blank, check whether you selected the Xfce session at login before changing autostart entries.</p><div class="docs-code"><code>xfce4-settings-manager</code></div><div class="docs-code"><code>xfce4-panel --restart</code></div><p><a href="https://docs.xfce.org/" target="_blank" rel="noopener">Xfce documentation</a></p><h3>ZelixOS setup</h3><p>Use Settings Manager → Session and Startup to review startup applications, and Panel preferences to arrange launchers. The installer supplies the Materia GTK theme, Adwaita icons and a dedicated wallpaper.</p></article></div>
+					<div data-policy-language="tr" lang="tr" hidden><article class="docs-guide" id="desktop-xfce-tr"><h3>Xfce</h3><p>Xfce klasik panel, uygulama menüsü ve yapılandırılabilir masaüstü sunar. Bileşenleri ayrıdır; panelin kaybolması her zaman tüm oturumun çöktüğü anlamına gelmez. Ekran, klavye, görünüm ve pencere davranışı için Ayar Yöneticisi’ni; başlatıcılar için panelin sağ tık menüsünü kullanın.</p><p><strong>Yararlı kontroller:</strong> Ayar Yöneticisi’ni <code>xfce4-settings-manager</code> ile açın. Yalnız panel kaybolduysa Xfce oturumundaki terminalden <code>xfce4-panel --restart</code> çalıştırın. Masaüstü boşsa başlangıç girdilerini değiştirmeden önce girişte Xfce oturumunu seçtiğinizi doğrulayın.</p><div class="docs-code"><code>xfce4-settings-manager</code></div><div class="docs-code"><code>xfce4-panel --restart</code></div><p><a href="https://docs.xfce.org/" target="_blank" rel="noopener">Xfce belgeleri</a></p><h3>ZelixOS kurulumu</h3><p>Başlangıç uygulamaları için Ayar Yöneticisi → Oturum ve Başlangıç bölümünü, başlatıcıları düzenlemek için Panel tercihlerini kullanın. Kurucu Materia GTK temasını, Adwaita simgelerini ve özel duvar kâğıdını sağlar.</p></article></div>
+                    <div data-policy-language="en" lang="en"><h3 class="docs-subheading">Everyday use</h3><article class="docs-guide"><h3>Panel and applications</h3><p>Use the application menu to start programs and the panel to switch windows. Right-click the panel to open its preferences and arrange items or launchers. Record your layout before making extensive changes.</p></article><article class="docs-guide"><h3>Settings and startup</h3><p>Open Settings Manager for displays, keyboard, appearance and window behavior. In Session and Startup, review applications that start with your session; disable an entry only after identifying what it does. See <a href="docs-themes.html#themes">visual themes</a> for appearance guidance.</p></article><article class="docs-guide"><h3>Panel or desktop problems</h3><p>If only the panel is missing, open a terminal in the Xfce session and run <code>xfce4-panel --restart</code>. If the entire session fails, check the selected session and free space, then follow <a href="docs-troubleshooting.html#troubleshooting">troubleshooting</a>. Back up configuration before changing or removing it.</p></article></div>
+                    <div data-policy-language="tr" lang="tr" hidden><h3 class="docs-subheading">Günlük kullanım</h3><article class="docs-guide"><h3>Panel ve uygulamalar</h3><p>Programları uygulama menüsünden açın ve pencereler arasında panelden geçin. Panele sağ tıklayarak tercihleri açın; öğeleri veya başlatıcıları düzenleyin. Kapsamlı değişikliklerden önce düzeninizi not edin.</p></article><article class="docs-guide"><h3>Ayarlar ve başlangıç</h3><p>Ekran, klavye, görünüm ve pencere davranışı için Ayar Yöneticisi’ni açın. Oturum ve Başlangıç bölümünde oturumla açılan uygulamaları inceleyin; bir girdiyi yalnızca ne yaptığını öğrendikten sonra kapatın. Görünüm için <a href="docs-themes.html#themes">görsel temalar</a> rehberine bakın.</p></article><article class="docs-guide"><h3>Panel veya masaüstü sorunları</h3><p>Yalnızca panel kaybolduysa Xfce oturumunda bir terminal açıp <code>xfce4-panel --restart</code> çalıştırın. Oturumun tamamı açılmıyorsa seçilen oturumu ve boş alanı kontrol edip <a href="docs-troubleshooting.html#troubleshooting">sorun giderme</a> rehberini izleyin. Yapılandırmayı değiştirmeden veya silmeden önce yedekleyin.</p></article></div>
+				</section>				<footer class="docs-footer"><p>Documentation for ZelixOS Aurora</p><div><a href="https://zelixos.com/">ZelixOS home</a><a href="https://zelixos.com/blog/">Blog</a><a href="https://zelixos.com/download/">Downloads</a><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></div></footer>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

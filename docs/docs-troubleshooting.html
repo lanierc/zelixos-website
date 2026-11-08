@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Troubleshooting — ZelixOS Documentation</title>
+	<meta name="description" content="Installation, configuration, and troubleshooting documentation for ZelixOS.">
+	<meta name="theme-color" content="#0b0b0c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="docs.css">
+	<script src="docs-search-index.js" defer></script>
+	<script src="docs.js" defer></script>
+	<script src="site-language.js" defer></script>
+</head>
+<body class="docs-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+	<header class="site-header docs-header">
+		<div class="container docs-header-inner">
+			<a class="brand" href="https://zelixos.com/" aria-label="ZelixOS home">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+				<span>ZelixOS</span>
+			</a>
+			<nav class="docs-primary-nav" aria-label="Main">
+				<a class="docs-top-link" href="https://zelixos.com/">Home</a>
+				<a class="docs-top-link" href="https://zelixos.com/blog/">Blog</a>
+				<a class="docs-top-link" href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a>
+			</nav>
+			<div class="docs-header-actions">
+				<a class="btn btn-outline-strong btn-sm docs-download-link" href="https://zelixos.com/download/">Download</a>
+				<button class="docs-top-link site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button>
+				<button class="docs-mobile-toggle" type="button" aria-expanded="false" aria-controls="docs-sidebar">Menu</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="docs-shell">
+		<aside class="docs-sidebar" id="docs-sidebar" aria-label="Documentation navigation">
+			<div class="docs-search-wrap">
+				<label class="visually-hidden" for="docs-search">Search documentation</label>
+				<div class="docs-search-field">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+					<input id="docs-search" type="search" placeholder="Search documentation" autocomplete="off">
+					<kbd>Ctrl K</kbd>
+				</div>
+				<div class="docs-search-results" id="docs-search-results" role="listbox" aria-label="Search results" hidden></div>
+			</div>
+			<nav class="docs-nav">
+				<p class="docs-nav-label">Documentation</p>
+				<a href="index.html#overview" class="docs-nav-link is-active">Overview</a>
+				<p class="docs-nav-label">Getting started</p>
+				<a href="docs-introduction.html#introduction" class="docs-nav-link">Why ZelixOS?</a>
+				<a href="docs-requirements.html#requirements" class="docs-nav-link">System requirements</a>
+				<a href="docs-download.html#download" class="docs-nav-link">Download and verify</a>
+				<p class="docs-nav-label">Installation</p>
+				<a href="docs-usb-prep.html#usb-prep" class="docs-nav-link">Prepare installation media</a>
+				<a href="docs-installer.html#installer" class="docs-nav-link">Zelix Installer</a>
+				<a href="docs-post-install.html#post-install" class="docs-nav-link">Post-installation</a>
+				<a href="docs-boot-recovery.html#boot-recovery" class="docs-nav-link">Boot and recovery</a>
+				<p class="docs-nav-label">Using ZelixOS</p>
+				<a href="docs-desktops.html#desktops" class="docs-nav-link">Desktop environments</a>
+				<a href="docs-desktop-plasma.html#desktop-plasma" class="docs-nav-link docs-nav-sublink">KDE Plasma</a>
+				<a href="docs-desktop-gnome.html#desktop-gnome" class="docs-nav-link docs-nav-sublink">GNOME</a>
+				<a href="docs-desktop-xfce.html#desktop-xfce" class="docs-nav-link docs-nav-sublink">Xfce</a>
+				<a href="docs-desktop-hyprland.html#desktop-hyprland" class="docs-nav-link docs-nav-sublink">Hyprland</a>
+				<a href="docs-desktop-sway.html#desktop-sway" class="docs-nav-link docs-nav-sublink">Sway</a>
+				<a href="docs-desktop-i3.html#desktop-i3" class="docs-nav-link docs-nav-sublink">i3</a>
+				<a href="docs-desktop-bspwm.html#desktop-bspwm" class="docs-nav-link docs-nav-sublink">bspwm</a>
+				<a href="docs-themes.html#themes" class="docs-nav-link">ZelixOS visual themes</a>
+				<a href="docs-app-install.html#app-install" class="docs-nav-link">Install applications</a>
+				<a href="docs-tools.html#tools" class="docs-nav-link">Zelix tools</a>
+				<a href="docs-packages.html#packages" class="docs-nav-link">Packages and AUR</a>
+				<a href="docs-maintenance.html#maintenance" class="docs-nav-link">System maintenance</a>
+				<a href="docs-hardware.html#hardware" class="docs-nav-link">Hardware and drivers</a>
+				<a href="docs-gaming.html#gaming" class="docs-nav-link">Gaming</a>
+				<a href="docs-troubleshooting.html#troubleshooting" class="docs-nav-link">Troubleshooting</a>
+			</nav>
+			<div class="docs-sidebar-footer"><span class="docs-status-dot" aria-hidden="true"></span>ZelixOS Aurora documentation</div>
+		</aside>
+
+		<main class="docs-main" id="main-content">
+			<div class="docs-content">
+				<nav class="docs-breadcrumb" aria-label="Breadcrumb"><a href="https://zelixos.com/">ZelixOS</a><span aria-hidden="true">/</span><a href="index.html#overview">Documentation</a><span aria-hidden="true">/</span><a id="docs-breadcrumb-group" href="index.html#overview">Overview</a><span aria-hidden="true">/</span><span id="docs-breadcrumb-current" aria-current="page">Overview</span></nav>
+				<section class="docs-section" id="troubleshooting" data-title="Troubleshooting" data-group="Using ZelixOS">
+					<p class="eyebrow">Support</p><h2>Troubleshooting</h2>
+					<p>Start with these basic checks before changing system configuration.</p>
+					<div data-policy-language="en">
+						<p>Use the checks below from the affected installed system unless a step says live USB. Start with read-only commands and record what you find. A command missing on your installation is useful information; do not install random packages just to make a diagnostic command run.</p>
+						<article class="docs-guide"><h3>1. Collect the basics</h3><p>Note the ZelixOS release, desktop, session type, kernel, hardware, and when the problem started. The commands below show the running kernel, PCI devices, disk layout, and recent errors from this boot. System logs may need administrator rights. Check output for private names, paths, and addresses before sharing.</p><div class="docs-code"><code>uname -r</code></div><div class="docs-code"><code>lspci -k</code></div><div class="docs-code"><code>lsblk -f</code></div><div class="docs-code"><code>sudo journalctl -b -p err --no-pager -n 80</code></div></article>
+						<article class="docs-guide"><h3>2. Desktop will not open or login loops</h3><p>At the greeter, select the desktop that was installed. If the screen returns to the greeter, switch to a text console with Ctrl+Alt+F3 and sign in. Check free space and failed user services. A full root partition can prevent sessions from starting. Record recent user journal messages; do not delete desktop configuration files before backing them up.</p><div class="docs-code"><code>df -h</code></div><div class="docs-code"><code>systemctl --user --failed</code></div><div class="docs-code"><code>journalctl --user -b --no-pager -n 80</code></div><p>If the text console also fails, use the live USB to inspect disks and collect the visible error. A blank graphical screen after changing a Hyprland, Sway, i3, or bspwm config should prompt a check of that config and its most recent edit.</p></article>
+						<article class="docs-guide"><h3>3. Network connects but downloads fail</h3><p>First check whether websites load and whether the problem affects every application or only pacman. If NetworkManager is present, <code>nmcli device status</code> shows device state. <code>ip route</code> shows the selected route. A missing route points to a connection problem; a pacman-only failure can indicate an outdated mirror or package database. Use Zelix Hello's mirror action or a full system update after confirming connectivity.</p><div class="docs-code"><code>nmcli device status</code></div><div class="docs-code"><code>ip route</code></div><div class="docs-code"><code>sudo pacman -Syu</code></div><p>Never use <code>pacman -Sy</code> alone as a workaround. If a mirror returns 404, note the package name and mirror URL before changing settings.</p></article>
+						<article class="docs-guide"><h3>4. Updates stop or pacman says the database is locked</h3><p>Check whether Zelix Updater, pacman, or an AUR helper is still running. A lock can protect an active transaction. Wait for the operation to finish; never remove the lock while it is active. If an operation was interrupted, record the exact error and ask for help with the stale lock after verifying all package processes have stopped. Check free space and retry a full update only after the cause is clear.</p><div class="docs-code"><code>ps -ef | grep -E '[p]acman|[y]ay|[p]aru'</code></div><div class="docs-code"><code>df -h</code></div></article>
+						<article class="docs-guide"><h3>5. No audio, microphone, or Bluetooth</h3><p>Check the selected input and output in your desktop settings, mute state, and the app's own device selection. For PipeWire systems, <code>wpctl status</code> lists sinks and sources. If that command is unavailable, record it and check whether PipeWire and WirePlumber are running for your user. Bluetooth issues should also be checked against airplane mode and adapter state.</p><div class="docs-code"><code>wpctl status</code></div><div class="docs-code"><code>systemctl --user status pipewire wireplumber</code></div><p>Do not restart or replace audio services until you know which component is failing.</p></article>
+						<article class="docs-guide"><h3>6. A monitor is missing or the screen is black</h3><p>Test the cable and input selection first. KDE, GNOME, and Xfce provide display settings. In Hyprland use <code>hyprctl monitors</code>; in Sway use <code>swaymsg -t get_outputs</code>; in i3 use <code>i3-msg -t get_outputs</code>. Note whether the display is detected, which session type you use, and the GPU driver reported by <code>lspci -k</code>. Do not install a generic NVIDIA package before identifying the card and kernel.</p></article>
+						<article class="docs-guide"><h3>7. What to include in a support report</h3><p>Write a short title describing the symptom. Include the ISO/release, desktop or WM, Wayland or X11, hardware model, exact error text, steps to reproduce, what you already tried, and relevant command output. State whether the problem started after an update or a configuration change. Redact account names, Wi-Fi credentials, tokens, and other private data.</p><p><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">ZelixOS project and issue tracker</a></p></article>
+					</div>
+					<div data-policy-language="tr" hidden>
+						<p>Aksi belirtilmedikçe aşağıdaki kontrolleri sorun yaşanan kurulu sistemde yapın; canlı USB adımlarını ayrıca belirttik. Önce yalnızca bilgi okuyan komutları kullanıp bulguları kaydedin. Bir komutun kurulu sistemde bulunmaması da yararlı bilgidir; sırf tanılama komutu çalışsın diye rastgele paket yüklemeyin.</p>
+						<article class="docs-guide"><h3>1. Temel bilgileri toplayın</h3><p>ZelixOS sürümünü, masaüstünü, oturum türünü, çekirdeği, donanımı ve sorunun ne zaman başladığını not edin. Aşağıdaki komutlar çalışan çekirdeği, PCI aygıtlarını, disk düzenini ve bu açılıştaki son hataları gösterir. Sistem günlükleri yönetici yetkisi isteyebilir. Paylaşmadan önce çıktıda özel ad, yol ve adres olup olmadığını kontrol edin.</p><div class="docs-code"><code>uname -r</code></div><div class="docs-code"><code>lspci -k</code></div><div class="docs-code"><code>lsblk -f</code></div><div class="docs-code"><code>sudo journalctl -b -p err --no-pager -n 80</code></div></article>
+						<article class="docs-guide"><h3>2. Masaüstü açılmıyor veya giriş döngüsü yaşanıyor</h3><p>Giriş ekranında kurduğunuz masaüstünü seçin. Ekran tekrar giriş ekranına dönüyorsa Ctrl+Alt+F3 ile metin konsoluna geçip oturum açın. Boş alanı ve başarısız kullanıcı servislerini kontrol edin. Dolu kök bölüm oturumun açılmasını engelleyebilir. Son kullanıcı günlüklerini kaydedin; masaüstü yapılandırma dosyalarını yedeklemeden silmeyin.</p><div class="docs-code"><code>df -h</code></div><div class="docs-code"><code>systemctl --user --failed</code></div><div class="docs-code"><code>journalctl --user -b --no-pager -n 80</code></div><p>Metin konsolu da açılmıyorsa canlı USB ile diskleri inceleyip ekrandaki hatayı kaydedin. Hyprland, Sway, i3 veya bspwm yapılandırması değiştikten sonra siyah ekran oluştuysa dosyanın son düzenlemesini kontrol edin.</p></article>
+						<article class="docs-guide"><h3>3. Ağ bağlı ama indirmeler başarısız</h3><p>Önce sitelerin açılıp açılmadığına, sorunun tüm uygulamalarda mı yalnız pacman’da mı görüldüğüne bakın. NetworkManager varsa <code>nmcli device status</code> aygıt durumunu gösterir. <code>ip route</code> seçilen rotayı gösterir. Rota yoksa bağlantı sorunu olabilir; yalnız pacman hata veriyorsa yansı veya paket veritabanı güncelliğini kontrol edin. Bağlantıyı doğruladıktan sonra Zelix Hello’nun yansı aracını ya da tam sistem güncellemesini kullanın.</p><div class="docs-code"><code>nmcli device status</code></div><div class="docs-code"><code>ip route</code></div><div class="docs-code"><code>sudo pacman -Syu</code></div><p>Geçici çözüm olarak <code>pacman -Sy</code> komutunu tek başına çalıştırmayın. Bir yansı 404 döndürüyorsa ayarları değiştirmeden önce paket adını ve yansı adresini kaydedin.</p></article>
+						<article class="docs-guide"><h3>4. Güncelleme duruyor veya pacman veritabanı kilitli diyor</h3><p>Zelix Updater, pacman veya AUR yardımcısının hâlâ çalışıp çalışmadığını kontrol edin. Kilit, etkin işlemi koruyor olabilir. İşlem bitene kadar bekleyin; etkin işlem sırasında kilidi silmeyin. İşlem yarıda kesildiyse tam hatayı kaydedin ve bütün paket süreçlerinin durduğunu doğruladıktan sonra eski kilit için yardım isteyin. Nedeni anlamadan tam güncellemeyi tekrarlamayın; boş alanı da kontrol edin.</p><div class="docs-code"><code>ps -ef | grep -E '[p]acman|[y]ay|[p]aru'</code></div><div class="docs-code"><code>df -h</code></div></article>
+						<article class="docs-guide"><h3>5. Ses, mikrofon veya Bluetooth çalışmıyor</h3><p>Masaüstü ayarlarında seçilen giriş ve çıkışı, sessiz modunu ve uygulamanın kendi aygıt seçimini kontrol edin. PipeWire sistemlerinde <code>wpctl status</code> ses çıkış ve girişlerini listeler. Komut yoksa bunu not edin ve kullanıcı için PipeWire ile WirePlumber’ın çalışıp çalışmadığını inceleyin. Bluetooth için uçak modunu ve bağdaştırıcının etkinliğini de kontrol edin.</p><div class="docs-code"><code>wpctl status</code></div><div class="docs-code"><code>systemctl --user status pipewire wireplumber</code></div><p>Hangi bileşenin bozuk olduğunu anlamadan ses servislerini yeniden başlatmayın veya değiştirmeyin.</p></article>
+						<article class="docs-guide"><h3>6. Ekran görünmüyor veya siyah kalıyor</h3><p>Önce kabloyu ve monitörün giriş seçimini deneyin. KDE, GNOME ve Xfce ekran ayarları sunar. Hyprland’da <code>hyprctl monitors</code>, Sway’de <code>swaymsg -t get_outputs</code>, i3’te <code>i3-msg -t get_outputs</code> kullanın. Ekranın algılanıp algılanmadığını, oturum türünü ve <code>lspci -k</code> çıktısındaki GPU sürücüsünü not edin. Kartı ve çekirdeği belirlemeden genel bir NVIDIA paketi yüklemeyin.</p></article>
+						<article class="docs-guide"><h3>7. Destek bildirimine neler eklemeli?</h3><p>Belirtiyi anlatan kısa bir başlık yazın. ISO/sürüm, masaüstü veya pencere yöneticisi, Wayland ya da X11, donanım modeli, tam hata metni, tekrarlama adımları, denedikleriniz ve ilgili komut çıktılarını ekleyin. Sorunun güncelleme veya yapılandırma değişikliği sonrasında başlayıp başlamadığını belirtin. Hesap adlarını, Wi-Fi parolalarını, anahtarları ve diğer özel bilgileri gizleyin.</p><p><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">ZelixOS projesi ve hata takibi</a></p></article>
+					</div>
+					<div class="docs-faq">
+						<details><summary>The live USB will not start</summary><p>Verify the ISO against the checksum for its release, then write it to the entire USB device again. Try the firmware's one-time boot menu. Aurora 1.0.0 recommends UEFI with Secure Boot disabled. Record any on-screen error before changing firmware settings.</p></details>
+						<details><summary>The installer cannot connect to the internet</summary><p>Connect from the live desktop's network controls, then open a website to confirm access. Try Ethernet if Wi-Fi is unavailable. Record the network adapter model and the exact installer error if it still fails.</p></details>
+						<details><summary>The installer cannot see the target disk</summary><p>Check that the disk appears in the firmware and in the live session with <code>lsblk -f</code>. Record the disk model and current storage-controller setting. Do not change controller mode or erase partitions without a backup and a recovery plan for any existing operating system.</p></details>
+						<details><summary>The computer boots to the old operating system</summary><p>Remove the USB drive and select the installed ZelixOS entry from the firmware boot menu. If it is absent, follow the <a href="docs-boot-recovery.html#boot-recovery">boot and recovery</a> checks and record the boot mode and partition layout.</p></details>
+						<details><summary>An update fails</summary><p>Record the complete error, check the network and free space with <code>df -h</code>, and confirm that another package operation is not running. Fix the cause and retry a full update. Do not delete the pacman lock file while an update is active.</p></details>
+						<details><summary>No sound or microphone</summary><p>Check the selected input and output in the desktop's audio settings and test another application. If sound still fails, record the device name and the output of <code>systemctl --user status pipewire wireplumber</code> for a support report.</p></details>
+						<details><summary>I need more help</summary><p>Report the ZelixOS release, desktop, hardware model, exact error, and steps to reproduce it in the <a href="https://github.com/ZelixOS" target="_blank" rel="noopener">ZelixOS GitHub</a>. Remove passwords and other private information from logs before sharing them.</p></details>
+					</div>
+				</section>				<footer class="docs-footer"><p>Documentation for ZelixOS Aurora</p><div><a href="https://zelixos.com/">ZelixOS home</a><a href="https://zelixos.com/blog/">Blog</a><a href="https://zelixos.com/download/">Downloads</a><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></div></footer>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

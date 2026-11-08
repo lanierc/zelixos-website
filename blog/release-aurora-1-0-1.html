@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZelixOS Aurora 1.0.1 — Release Notes</title>
+  <meta name="description" content="ZelixOS Aurora 1.0.1 release notes: multi-desktop installation, previews, themes, installer checks, and updater improvements.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="blog.css">
+  <script src="../site-language.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="https://zelixos.com/"><svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="#f2f2f3" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="#f2f2f3" stroke-width="1.5" stroke-linecap="square"/></svg>ZelixOS</a>
+      <nav class="nav-links" aria-label="Main"><a href="https://zelixos.com/">Home</a><a href="https://zelixos.com/index.html#features">Features</a><a href="https://zelixos.com/download/">Download</a><a href="https://docs.zelixos.com/">Wiki</a><a href="./">Blog</a><a href="https://distrowatch.com/table.php?distribution=zelixos" target="_blank" rel="noopener">DistroWatch</a><a href="https://zelixos.com/about/">About</a></nav>
+      <div class="header-actions"><a class="btn btn-outline-strong btn-sm" href="https://zelixos.com/download/">Download</a><button class="btn btn-outline btn-sm site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button></div>
+    </div>
+  </header>
+  <main id="main-content">
+    <section class="band page-head">
+      <div class="container stack gap-24">
+        <a class="release-back-link" href="./" data-release-back>← Back to blog</a>
+        <div data-policy-language="en" lang="en"><div class="release-meta"><span class="pill">Release notes</span><time datetime="2026-11-07">November 7, 2026</time></div><h1 class="display display-md release-title">ZelixOS Aurora 1.0.1</h1><p class="lead">Aurora 1.0.1 expands desktop choice, improves installer feedback and compatibility, and adds clearer update information to Zelix Updater.</p></div>
+        <div data-policy-language="tr" lang="tr" hidden><div class="release-meta"><span class="pill">Sürüm notları</span><time datetime="2026-11-07">7 Kasım 2026</time></div><h1 class="display display-md release-title">ZelixOS Aurora 1.0.1</h1><p class="lead">Aurora 1.0.1 masaüstü seçeneklerini genişletiyor, yükleyici geri bildirimini ve uyumluluğunu iyileştiriyor ve Zelix Updater'a daha anlaşılır güncelleme bilgileri ekliyor.</p></div>
+      </div>
+    </section>
+    <section class="band section release-content"><div class="container stack gap-40">
+      <div data-policy-language="en" lang="en">
+        <section class="release-section"><span class="eyebrow">Aurora 1.0.1 · Overview</span><h2 class="title title-sm">A more flexible start</h2><p>Aurora 1.0.1 builds on the 1.0.0 release with more choices during installation and clearer information while maintaining your system. The installer can set up multiple desktops in one installation, while Zelix Updater shows which packages are available before you confirm an update.</p><p>This release also improves checks and error messages around installation. Below is a closer look at what has changed and what to know before installing the new image.</p></section>
+        <section class="release-section"><span class="eyebrow">01 · Installation</span><h2 class="title title-sm">More choice in the desktop setup</h2><div class="release-feature-grid">
+          <article class="card"><h3>Multiple desktops in one install</h3><p>Zelixins now supports selecting multiple desktop environments and window managers together: KDE Plasma, GNOME, Xfce, Hyprland, Sway, i3, and bspwm.</p></article>
+          <article class="card"><h3>Desktop previews</h3><p>The desktop selection screen includes previews. Display manager choices adapt to the selected environments, and the installation summary lists every choice.</p></article>
+          <article class="card"><h3>Appearance tailored to each desktop</h3><p>Initial appearance settings and wallpapers are provided for each selected desktop environment and window manager.</p></article>
+          <article class="card"><h3>Hyprland essentials</h3><p>Hyprland installations include Waybar and Wofi. Waybar starts with the session, and <strong>Super + Space</strong> opens the application launcher.</p></article>
+          <article class="card"><h3>Stronger compatibility checks</h3><p>Disk, partition, and boot checks have been improved, along with BIOS and UEFI setup and clearer installation and post-installation error reporting.</p></article>
+        </div></section>
+        <section class="release-section"><span class="eyebrow">02 · Zelix Updater</span><h2 class="title title-sm">Review updates before applying them</h2><div class="release-tool-list"><article class="card"><ul><li>Available packages and their versions are listed.</li><li>Updates require confirmation before the process starts.</li><li>Process output is shown so you can follow each operation.</li><li>Missing <code>pacman-contrib</code> and <code>fakeroot</code> dependencies that could prevent update checks have been fixed, with a clearer error if a required command is missing.</li></ul></article></div></section>
+        <section class="release-section"><span class="eyebrow">03 · Refinements</span><h2 class="title title-sm">Additional application optimizations</h2><p>Zelix applications received additional optimizations. Documentation, support, and bug-reporting links were also updated in the live and installed systems.</p></section>
+        <section class="release-section"><span class="eyebrow">04 · Installation note</span><h2 class="title title-sm">Prepare before reinstalling</h2><div class="docs-callout docs-callout-warning"><strong>Destructive installation</strong><p>The installer erases the entire selected disk and does not offer manual partitioning. Back up important files before installing.</p></div></section>
+        <section class="release-section"><span class="eyebrow">05 · Getting started</span><h2 class="title title-sm">Installing the new release</h2><p>Download the 1.0.1 ISO below and verify it against the official checksum for that exact image if one is provided. Prepare a USB drive and boot into the live environment. Connect to the internet, open Zelix Installer, and review your desktop and disk selections before confirming.</p><p>After installation, remove the USB when restarting and choose your installed session at the login screen. The <a href="../docs/docs-installer.html#installer">installation guide</a> and <a href="../docs/docs-post-install.html#post-install">post-installation guide</a> cover the process in more detail.</p></section>
+        <div class="release-cta"><div><h2 class="title title-sm">Get ZelixOS Aurora 1.0.1</h2><p class="muted">Download the current ISO and review the installation guide.</p></div><a class="btn btn-primary btn-lg" href="https://sourceforge.net/projects/zelixos/files/zelix_isos/zelixos-2026.11.07-x86_64.iso/download" target="_blank" rel="noopener">Download ZelixOS</a></div>
+      </div>
+      <div data-policy-language="tr" lang="tr" hidden>
+        <section class="release-section"><span class="eyebrow">Aurora 1.0.1 · Genel bakış</span><h2 class="title title-sm">Daha esnek bir başlangıç</h2><p>Aurora 1.0.1, 1.0.0 sürümünün üzerine kurulum sırasında daha fazla seçenek ve sistem bakımında daha açık bilgiler ekliyor. Yükleyici tek kurulumda birden fazla masaüstünü hazırlayabiliyor; Zelix Updater ise güncellemeyi onaylamadan önce hangi paketlerin kullanılabilir olduğunu gösteriyor.</p><p>Bu sürüm kurulum kontrollerini ve hata mesajlarını da iyileştiriyor. Aşağıda değişiklikleri ve yeni kalıbı kurmadan önce bilinmesi gerekenleri daha yakından anlatıyoruz.</p></section>
+        <section class="release-section"><span class="eyebrow">01 · Kurulum</span><h2 class="title title-sm">Masaüstü kurulumu için daha fazla seçenek</h2><div class="release-feature-grid">
+          <article class="card"><h3>Tek kurulumda birden fazla masaüstü</h3><p>Zelixins artık KDE Plasma, GNOME, Xfce, Hyprland, Sway, i3 ve bspwm seçeneklerini tek kurulumda birlikte seçmenizi destekliyor.</p></article>
+          <article class="card"><h3>Masaüstü önizlemeleri</h3><p>Masaüstü seçim ekranında önizlemeler bulunuyor. Giriş yöneticisi seçenekleri seçilen ortamlarla uyumlu hale geliyor ve kurulum özeti tüm seçimleri listeliyor.</p></article>
+          <article class="card"><h3>Masaüstüne özel görünüm</h3><p>Seçilen masaüstü ortamı ve pencere yöneticilerine göre başlangıç görünümü ayarları ile duvar kâğıtları sunuluyor.</p></article>
+          <article class="card"><h3>Hyprland araçları</h3><p>Hyprland kurulumlarına Waybar ve Wofi dahil edildi. Waybar oturumla birlikte başlar; <strong>Super + Space</strong> uygulama menüsünü açar.</p></article>
+          <article class="card"><h3>Daha güçlü uyumluluk kontrolleri</h3><p>Disk, bölüm ve önyükleme kontrolleri; BIOS ve UEFI yapılandırması ile kurulum ve kurulum sonrası hata bildirimleri iyileştirildi.</p></article>
+        </div></section>
+        <section class="release-section"><span class="eyebrow">02 · Zelix Updater</span><h2 class="title title-sm">Güncellemeleri uygulamadan önce inceleyin</h2><div class="release-tool-list"><article class="card"><ul><li>Kullanılabilir paketler ve sürümleri listelenir.</li><li>İşlem başlamadan önce güncellemeyi onaylamanız gerekir.</li><li>Her adımı takip edebilmeniz için işlem çıktısı gösterilir.</li><li>Güncelleme kontrolünü engelleyebilen eksik <code>pacman-contrib</code> ve <code>fakeroot</code> bağımlılıkları giderildi; gerekli bir komut bulunmadığında gösterilen hata mesajı açıklandı.</li></ul></article></div></section>
+        <section class="release-section"><span class="eyebrow">03 · İyileştirmeler</span><h2 class="title title-sm">Ek uygulama optimizasyonları</h2><p>Zelix uygulamalarında ek optimizasyonlar yapıldı. Canlı ve kurulu sistemdeki dokümantasyon, destek ve hata bildirim bağlantıları da güncellendi.</p></section>
+        <section class="release-section"><span class="eyebrow">04 · Kurulum notu</span><h2 class="title title-sm">Kurulumdan önce hazırlık yapın</h2><div class="docs-callout docs-callout-warning"><strong>Kurulum verileri siler</strong><p>Kurucu seçilen diskin tamamını siler ve manuel bölümleme sunmaz. Kurulumdan önce önemli dosyalarınızı yedekleyin.</p></div></section>
+        <section class="release-section"><span class="eyebrow">05 · Başlangıç</span><h2 class="title title-sm">Yeni sürümün kurulumu</h2><p>Aşağıdan 1.0.1 ISO’sunu indirin; bu kalıp için resmî sağlama toplamı yayımlandıysa indirdiğiniz dosyayı onunla doğrulayın. Bir USB bellek hazırlayıp canlı ortamı başlatın. İnternete bağlanın, Zelix Installer’ı açın ve onaylamadan önce masaüstü ile disk seçimlerinizi gözden geçirin.</p><p>Kurulumdan sonra yeniden başlatırken USB’yi çıkarın ve giriş ekranında kurduğunuz oturumu seçin. <a href="../docs/docs-installer.html#installer">Kurulum</a> ve <a href="../docs/docs-post-install.html#post-install">kurulum sonrası</a> rehberlerinde adımları daha ayrıntılı bulabilirsiniz.</p></section>
+        <div class="release-cta"><div><h2 class="title title-sm">ZelixOS Aurora 1.0.1’i edinin</h2><p class="muted">Güncel ISO’yu indirin ve kurulum kılavuzunu inceleyin.</p></div><a class="btn btn-primary btn-lg" href="https://sourceforge.net/projects/zelixos/files/zelix_isos/zelixos-2026.11.07-x86_64.iso/download" target="_blank" rel="noopener">ZelixOS’u indir</a></div>
+      </div>
+    </div></section>
+  </main>
+  <footer class="site-footer"><div class="container"><div class="footer-top"><div class="footer-about"><strong>ZelixOS</strong><p>A modern, independent Arch Linux distribution built with care and precision by CyberPlus Studios.</p></div><div class="footer-cols"><div><h4>Product</h4><ul><li><a href="https://zelixos.com/index.html#features">Features</a></li><li><a href="https://zelixos.com/download/">Download</a></li><li><a href="https://zelixos.com/index.html#specs">Requirements</a></li></ul></div><div><h4>Resources</h4><ul><li><a href="https://docs.zelixos.com/">Documentation</a></li><li><a href="./">Blog</a></li><li><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></li><li><a href="https://zelixos.com/about/">About</a></li></ul></div><div><h4>Legal</h4><ul><li><a href="https://zelixos.com/pp/">Privacy Policy</a></li><li><a href="https://zelixos.com/br/">Report a Bug</a></li></ul></div></div></div><p class="copyright">© 2026 ZelixOS by CyberPlus Studios. All rights reserved.</p></div></footer>
+</body>
+</html>

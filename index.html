@@ -1,305 +1,327 @@
-<!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<!doctype html>
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ZelixOS — Vision of the Future Starts Here</title>
-  <meta name="description" content="ZelixOS is a modern, user-friendly Linux distribution powered by KDE technology. Designed for newcomers and efficient workflows.">
-  <link rel="stylesheet" href="styles.css">
-  <script src="theme.js"></script>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZelixOS — Feel the freedom</title>
+  <meta name="description" content="ZelixOS is an independent, rolling-release Linux distribution based on Arch Linux. Built for clean workflows, flexible desktop choices, and zero bloatware.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="style.css">
+  <script src="site-language.js" defer></script>
 </head>
 <body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
 
-  <!-- ═══ NAVBAR ═══ -->
-  <nav class="navbar" id="navbar">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-brand">
-        <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <rect width="32" height="32" rx="8" fill="url(#logo-grad)"/>
-          <path d="M8 22L16 10L20 16L24 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-          <defs><linearGradient id="logo-grad" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4F7DF7"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs>
-        </svg>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="https://zelixos.com/">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="#f2f2f3" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="#f2f2f3" stroke-width="1.5" stroke-linecap="square"/></svg>
         ZelixOS
       </a>
-
-      <ul class="nav-links" id="navLinks">
-        <li><a href="index.html" class="active">Home</a></li>
-        <li><a href="index.html#features">Features</a></li>
-        <li><a href="download.html">Download</a></li>
-        <li><a href="wiki.html">Wiki</a></li>
-        <li><a href="about.html">About</a></li>
-      </ul>
-
-      <div class="nav-actions">
-        <div class="theme-toggle" id="themeToggle">
-          <button data-theme="light" title="Light mode" aria-label="Light mode">☀️</button>
-          <button data-theme="dark" title="Dark mode" aria-label="Dark mode">🌙</button>
-          <button data-theme="system" title="System default" aria-label="System default">🖥️</button>
-        </div>
-        <a href="download.html" class="btn btn-primary btn-nav">Download</a>
-        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-          <span></span><span></span><span></span>
-        </button>
+      <nav class="nav-links" aria-label="Main">
+        <a href="index.html" aria-current="page">Home</a>
+        <a href="index.html#features">Features</a>
+        <a href="https://zelixos.com/download/">Download</a>
+        <a href="https://docs.zelixos.com/">Wiki</a>
+        <a href="blog/">Blog</a>
+        <a href="gallery/">Gallery</a>
+        <a href="https://distrowatch.com/table.php?distribution=zelixos" target="_blank" rel="noopener">DistroWatch</a>
+        <a href="about/">About</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-outline-strong btn-sm" href="https://zelixos.com/download/">Download</a>
+        <button class="btn btn-outline btn-sm site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button>
       </div>
     </div>
-  </nav>
+  </header>
 
-  <!-- ═══ HERO ═══ -->
-  <section class="hero" id="hero">
-    <div class="hero-bg">
-      <div class="orb orb-1"></div>
-      <div class="orb orb-2"></div>
-      <div class="orb orb-3"></div>
-    </div>
-    <div class="hero-grid"></div>
+  <main id="main-content">
 
-    <div class="hero-content">
-      <span class="badge">🚀 ZelixOS 0.4 — Now Available</span>
-      <h1>Vision of the Future<br><span class="gradient-text">Starts Here</span></h1>
-      <p class="hero-desc">
-        ZelixOS is a modern, user-friendly Linux distribution powered by KDE technology.
-        Designed for newcomers to Linux and those who want to work efficiently with a clean interface.
-      </p>
-      <div class="hero-buttons">
-        <a href="download.html" class="btn btn-primary">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download Now
-        </a>
-        <a href="about.html" class="btn btn-secondary">Learn More →</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ FEATURES ═══ -->
-  <section class="section-padding" id="features">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="badge">✦ Features</span>
-        <h2>Powerful <span class="gradient-text">Features</span></h2>
-        <p>Everything you need for a productive and enjoyable desktop experience.</p>
-      </div>
-
-      <div class="features-grid">
-        <div class="feature-card reveal reveal-delay-1">
-          <div class="feature-icon">🖥️</div>
-          <h3>Modern Desktop</h3>
-          <p>Experience a powerful and efficient workflow with the customizable KDE Plasma desktop environment.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-2">
-          <div class="feature-icon">📦</div>
-          <h3>Pre-configured Apps</h3>
-          <p>Get access to all the tools you need right after installation with our pre-configured application package.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-3">
-          <div class="feature-icon">🎨</div>
-          <h3>Dark &amp; Light Mode</h3>
-          <p>Easily switch between themes to reduce eye strain or match your environment and preference.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-4">
-          <div class="feature-icon">💾</div>
-          <h3>Zelix Backup</h3>
-          <p>Keep your data safe with our simple and effective backup solution for system and personal files.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-5">
-          <div class="feature-icon">⚡</div>
-          <h3>Zelix Essentials</h3>
-          <p>Install any type of programs within seconds with Zelix Essentials. Fast and easy.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-6">
-          <div class="feature-icon">🧹</div>
-          <h3>Zelix Cleaner</h3>
-          <p>Clean the temporary files or upgrade your PC with a click.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-7">
-          <div class="feature-icon">🚀</div>
-          <h3>High Performance</h3>
-          <p>Optimized structure delivers high performance even on low-end hardware. Fast boot and stable experience.</p>
-        </div>
-        <div class="feature-card reveal reveal-delay-8">
-          <div class="feature-icon">💻</div>
-          <h3>Developer Ready</h3>
-          <p>Pre-integrated development tools including VS Code, Git, Python and more make software development easier.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ SYSTEM REQUIREMENTS ═══ -->
-  <section class="section-padding" id="specs" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="badge">⚙️ Specifications</span>
-        <h2>System <span class="gradient-text">Requirements</span></h2>
-        <p>Required system specifications to run ZelixOS smoothly.</p>
-      </div>
-
-      <div class="specs-grid">
-        <div class="spec-card reveal reveal-delay-1">
-          <div class="spec-card-header">
-            <h3>Minimum</h3>
-            <p>Basic requirements to run ZelixOS</p>
-          </div>
-          <ul class="spec-list">
-            <li><span class="spec-icon">🧠</span> <strong>CPU:</strong> Dual-core 1.5 GHz</li>
-            <li><span class="spec-icon">💿</span> <strong>RAM:</strong> 2 GB</li>
-            <li><span class="spec-icon">💽</span> <strong>Storage:</strong> 20 GB</li>
-            <li><span class="spec-icon">🖼️</span> <strong>GPU:</strong> Integrated graphics</li>
-            <li><span class="spec-icon">📡</span> <strong>Network:</strong> Internet for setup</li>
-          </ul>
-        </div>
-        <div class="spec-card reveal reveal-delay-2">
-          <div class="spec-card-header">
-            <h3>Recommended</h3>
-            <p>For the best experience</p>
-          </div>
-          <ul class="spec-list">
-            <li><span class="spec-icon">🧠</span> <strong>CPU:</strong> Quad-core 2.0 GHz+</li>
-            <li><span class="spec-icon">💿</span> <strong>RAM:</strong> 4 GB+</li>
-            <li><span class="spec-icon">💽</span> <strong>Storage:</strong> 40 GB SSD</li>
-            <li><span class="spec-icon">🖼️</span> <strong>GPU:</strong> Dedicated GPU</li>
-            <li><span class="spec-icon">📡</span> <strong>Network:</strong> Broadband</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- ═══ GALLERY ═══ -->
-  <section class="section-padding" id="gallery">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="badge">🖼️ Gallery</span>
-        <h2>See ZelixOS <span class="gradient-text">in Action</span></h2>
-        <p>A glimpse into the beautiful and functional ZelixOS desktop.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <div class="gallery-card reveal reveal-delay-1">
-          <img src="screenshots/desktop-view.png" alt="Desktop Environment" class="gallery-image">
-        
-          <div class="gallery-card-overlay">
-            <h4>Desktop Environment</h4>
-            <p>Modern KDE Plasma interface</p>
+    <!-- Hero -->
+    <section class="band hero" id="top">
+      <div class="container stack gap-64">
+        <div class="hero-copy">
+          <span class="pill">ZelixOS Aurora · Rolling Release</span>
+          <h1 class="display">Feel the freedom.</h1>
+          <p class="lead">An independent, rolling-release Linux distribution based on Arch Linux. Built around a clean, streamlined desktop experience, dedicated in-house utilities, and complete user freedom.</p>
+          <div class="btn-row">
+            <a class="btn btn-primary" href="https://zelixos.com/download/">Download now</a>
+            <a class="btn btn-outline" href="about/">Learn more</a>
           </div>
         </div>
-        <div class="gallery-card reveal reveal-delay-2">
-          <img src="screenshots/app-menu.png" alt="Desktop Environment" class="gallery-image">
-          <div class="gallery-card-overlay">
-            <h4>Customization</h4>
-            <p>Personalize your workspace</p>
-          </div>
-        </div>
-        <div class="gallery-card reveal reveal-delay-3">
-          <img src="screenshots/zelix-tools.png" alt="Desktop Environment" class="gallery-image">
-          <div class="gallery-card-overlay">
-            <h4>System Tools</h4>
-            <p>Powerful built-in utilities</p>
-          </div>
+
+        <div class="window">
+          <div class="window-bar"><i></i><i></i><i></i><span>ZelixOS desktop</span></div>
+          <a class="image-zoom" href="images/Zelix Desktop SS.png" data-lightbox data-caption="ZelixOS with KDE Plasma desktop" aria-label="View the ZelixOS desktop screenshot full size">
+            <img class="shot" src="images/Zelix Desktop SS.png" alt="ZelixOS with KDE Plasma desktop">
+          </a>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══ TESTIMONIALS ═══ -->
-  <section class="section-padding" id="testimonials" style="background: var(--bg-secondary);">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="badge">💬 Community</span>
-        <h2>What Users <span class="gradient-text">Say</span></h2>
-        <p>Loved by developers, designers, and system administrators.</p>
+    <!-- Quick facts -->
+    <section class="band">
+      <div class="container">
+        <dl class="facts">
+          <div><dt>Base</dt><dd>Arch Linux</dd></div>
+          <div><dt>Desktop</dt><dd>KDE Plasma (Multi-DE Support)</dd></div>
+          <div><dt>Release Model</dt><dd>Rolling Release</dd></div>
+          <div><dt>Package Manager</dt><dd>Pacman</dd></div>
+        </dl>
       </div>
+    </section>
 
-      <div class="testimonials-grid">
-        <div class="testimonial-card reveal reveal-delay-1">
-          <div class="testimonial-stars">★★★★★</div>
-          <blockquote>"ZelixOS made my transition from Windows seamless. The pre-configured apps saved me hours of setup time!"</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">JD</div>
-            <div class="testimonial-author-info">
-              <h4>John Doe</h4>
-              <p>Software Developer</p>
+    <!-- Features -->
+    <section class="band section" id="features">
+      <div class="container stack gap-56">
+        <div class="section-head">
+          <span class="eyebrow">Features</span>
+          <h2 class="title">Bespoke, clean, and powerful</h2>
+          <p class="muted">Crafted for users who appreciate minimalism, performance, and complete system control.</p>
+        </div>
+        <div class="grid grid-250">
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18v11H3z M8 20h8 M12 16v4"/></svg>
+            <h3>Flexible Desktop Choices</h3>
+            <p>Ships with a clean KDE Plasma environment, while the installer lets you choose GNOME, Xfce, Hyprland, Sway, i3, and more.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13 3L5 14h6l-1 7 8-11h-6z"/></svg>
+            <h3>Arch Linux Core</h3>
+            <p>Bleeding-edge Linux kernel, rolling updates, and full access to the vast Arch User Repository (AUR).</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3l8 4.5v9L12 21l-8-4.5v-9z M12 12l8-4.5 M12 12v9 M12 12L4 7.5"/></svg>
+            <h3>Zelix Installer</h3>
+            <p>Our custom graphical installer (`zelixins`) allows picking your desktop environment, disk partitioning, and bilingual setup.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 7c0-1.7 3.6-3 8-3s8 1.3 8 3-3.6 3-8 3-8-1.3-8-3z M4 7v5c0 1.7 3.6 3 8 3s8-1.3 8-3V7 M4 12v5c0 1.7 3.6 3 8 3s8-1.3 8-3v-5"/></svg>
+            <h3>Zelix Hello</h3>
+            <p>Your post-install welcome hub. Easily install your favorite web browsers, dev tools, and desktop applications.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11 M7 11l5 5 5-5 M5 20h14"/></svg>
+            <h3>Zelix Updater</h3>
+            <p>A standalone, lightweight GUI utility for one-click system package updates and maintenance.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v4 M12 17v4 M3 12h4 M17 12h4 M6 6l2.5 2.5 M15.5 15.5L18 18 M18 6l-2.5 2.5 M8.5 15.5L6 18"/></svg>
+            <h3>Clean-Slate Philosophy</h3>
+            <p>Zero pre-bundled bloatware or forced suites. The system starts light and lets you build your ideal environment.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3a9 9 0 1 0 9 9 7 7 0 0 1-9-9z"/></svg>
+            <h3>Zelix Extras Wallpapers</h3>
+            <p>Includes a built-in gallery of 90 curated aesthetic wallpapers ready to apply straight from the desktop settings.</p>
+          </article>
+          <article class="card">
+            <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 8l-5 4 5 4 M16 8l5 4-5 4 M14 5l-4 14"/></svg>
+            <h3>Zelix CLI & Terminal</h3>
+            <p>Includes the `zelix` command-line utility, Fastfetch info display, and pre-configured Zsh/Bash defaults.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Specs -->
+    <section class="band section" id="specs">
+      <div class="container stack gap-56">
+        <div class="section-head">
+          <span class="eyebrow">Specifications</span>
+          <h2 class="title">System requirements</h2>
+          <p class="muted">What your machine needs to run ZelixOS smoothly.</p>
+        </div>
+        <div class="grid grid-300">
+          <div class="panel">
+            <div class="panel-head">
+              <h3>Minimum</h3>
+              <span class="sub">Basic requirements to run ZelixOS</span>
             </div>
+            <dl class="specs">
+              <div><dt>CPU</dt><dd>Dual-core 1.5 GHz</dd></div>
+              <div><dt>RAM</dt><dd>2 GB</dd></div>
+              <div><dt>Storage</dt><dd>20 GB</dd></div>
+              <div><dt>GPU</dt><dd>Integrated graphics</dd></div>
+              <div><dt>Network</dt><dd>Internet for setup</dd></div>
+            </dl>
           </div>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-2">
-          <div class="testimonial-stars">★★★★★</div>
-          <blockquote>"The KDE Plasma desktop is beautifully customized. It's the perfect blend of aesthetics and functionality."</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">AS</div>
-            <div class="testimonial-author-info">
-              <h4>Alice Smith</h4>
-              <p>Graphic Designer</p>
+          <div class="panel panel-strong">
+            <div class="panel-head">
+              <h3>Recommended</h3>
+              <span class="sub">For the best experience</span>
             </div>
-          </div>
-        </div>
-        <div class="testimonial-card reveal reveal-delay-3">
-          <div class="testimonial-stars">★★★★★</div>
-          <blockquote>"Lightweight, stable, and perfect for server management. Zelix Backup gives me peace of mind every day."</blockquote>
-          <div class="testimonial-author">
-            <div class="testimonial-avatar">MB</div>
-            <div class="testimonial-author-info">
-              <h4>Mike Brown</h4>
-              <p>System Administrator</p>
-            </div>
+            <dl class="specs">
+              <div><dt>CPU</dt><dd>Quad-core 2.0 GHz+</dd></div>
+              <div><dt>RAM</dt><dd>4 GB+</dd></div>
+              <div><dt>Storage</dt><dd>30 GB SSD</dd></div>
+              <div><dt>GPU</dt><dd>Dedicated GPU</dd></div>
+              <div><dt>Network</dt><dd>Broadband</dd></div>
+            </dl>
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- ═══ FOOTER ═══ -->
-  <footer class="footer">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <a href="index.html" class="nav-brand">
-          <svg viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg" width="28" height="28">
-            <rect width="32" height="32" rx="8" fill="url(#logo-grad2)"/>
-            <path d="M8 22L16 10L20 16L24 10" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
-            <defs><linearGradient id="logo-grad2" x1="0" y1="0" x2="32" y2="32"><stop stop-color="#4F7DF7"/><stop offset="1" stop-color="#8B5CF6"/></linearGradient></defs>
-          </svg>
-          ZelixOS
-        </a>
-        <p>A modern, user-friendly Linux distribution built with care and precision by CyberPlus Studios.</p>
+    <!-- Gallery -->
+    <section class="band section" id="gallery">
+      <div class="container stack gap-56">
+        <div class="section-head">
+          <span class="eyebrow">Gallery</span>
+          <h2 class="title">See ZelixOS in action</h2>
+          <p class="muted">A glimpse into the functional, quiet ZelixOS desktop.</p>
+        </div>
+        <div class="grid grid-gallery">
+          <figure class="gallery-item">
+            <a class="image-zoom" href="images/Zelix Desktop SS.png" data-lightbox data-caption="Modern KDE Plasma interface" aria-label="View the desktop environment screenshot full size">
+              <img src="images/Zelix Desktop SS.png" alt="ZelixOS desktop environment" loading="lazy">
+            </a>
+            <figcaption><strong>Desktop environment</strong><span>Modern KDE Plasma interface</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <a class="image-zoom" href="images/Zelix Hello SS.png" data-lightbox data-caption="Install programs and customize your workspace easily" aria-label="View the Zelix Hello screenshot full size">
+              <img src="images/Zelix Hello SS.png" alt="ZelixOS application menu" loading="lazy">
+            </a>
+            <figcaption><strong>Zelix Hello</strong><span>Install programs and customize your workspace easily</span></figcaption>
+          </figure>
+          <figure class="gallery-item">
+            <a class="image-zoom" href="images/ZelixOS Tools SS.png" data-lightbox data-caption="Powerful built-in utilities" aria-label="View the Zelix system tools screenshot full size">
+              <img src="images/ZelixOS Tools SS.png" alt="Zelix system tools" loading="lazy">
+            </a>
+            <figcaption><strong>System tools</strong><span>Powerful built-in utilities</span></figcaption>
+          </figure>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Product</h4>
-        <ul>
-          <li><a href="index.html#features">Features</a></li>
-          <li><a href="download.html">Download</a></li>
-          <li><a href="index.html#specs">Requirements</a></li>
-          <li><a href="index.html#gallery">Gallery</a></li>
-        </ul>
+    </section>
+
+    <!-- Community -->
+    <section class="band section" id="community">
+      <div class="container stack gap-56">
+        <div class="section-head">
+          <span class="eyebrow">Community & Ecosystem</span>
+          <h2 class="title">Built in the open</h2>
+          <p class="muted">ZelixOS is developed by CyberPlus Studios. Read the docs, inspect the code, or join the community.</p>
+        </div>
+        <div class="grid grid-260">
+          <a class="card card-link" href="https://docs.zelixos.com/">
+            <h3>Documentation</h3>
+            <p>Guides and reference for installing and using ZelixOS.</p>
+            <span class="url">docs.zelixos.com</span>
+          </a>
+          <a class="card card-link" href="https://distrowatch.com/table.php?distribution=zelixos" target="_blank" rel="noopener">
+            <h3>DistroWatch</h3>
+            <p>Follow our distribution profile, ratings, and latest updates.</p>
+            <span class="url">distrowatch.com/zelixos</span>
+          </a>
+          <a class="card card-link" href="https://github.com/ZelixOS" target="_blank" rel="noopener">
+            <h3>GitHub</h3>
+            <p>Follow development, inspect source repositories, and contribute.</p>
+            <span class="url">github.com/ZelixOS</span>
+          </a>
+          <a class="card card-link" href="https://www.reddit.com/r/ZelixOS/" target="_blank" rel="noopener">
+            <h3>Reddit</h3>
+            <p>Ask questions and share your setup with other users.</p>
+            <span class="url">reddit.com/r/ZelixOS</span>
+          </a>
+        </div>
       </div>
-      <div class="footer-col">
-        <h4>Resources</h4>
-        <ul>
-          <li><a href="wiki.html">Documentation</a></li>
-          <li><a href="https://www.reddit.com/r/ZelixOS/" target="_blank" rel="noopener">Community</a></li>
-          <li><a href="https://github.com/yasirpeker1212/zelixos/" target="_blank" rel="noopener">GitHub</a></li>
-          <li><a href="about.html">About</a></li>
-        </ul>
+    </section>
+
+    <!-- Download CTA -->
+    <section class="band band-alt section" id="download">
+      <div class="container cta-inner">
+        <div>
+          <h2 class="title">Get ZelixOS Aurora</h2>
+          <p class="muted">Download the rolling ISO image, flash to USB, and experience modern, bloat-free computing.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="https://zelixos.com/download/">Download ISO</a>
       </div>
-      <div class="footer-col">
-        <h4>Legal</h4>
-        <ul>
-          <li><a href="pp.html">Privacy Policy</a></li>
-          <li><a href="br.html">Report a Bug</a></li>
-        </ul>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-about">
+          <strong>ZelixOS</strong>
+          <p>A modern, independent Arch Linux distribution built with care and precision by CyberPlus Studios.</p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>Product</h4>
+            <ul>
+              <li><a href="index.html#features">Features</a></li>
+              <li><a href="https://zelixos.com/download/">Download</a></li>
+              <li><a href="index.html#specs">Requirements</a></li>
+              <li><a href="gallery/">Gallery</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="https://docs.zelixos.com/">Documentation</a></li>
+              <li><a href="blog/">Blog</a></li>
+              <li><a href="https://distrowatch.com/table.php?distribution=zelixos" target="_blank" rel="noopener">DistroWatch</a></li>
+              <li><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://www.reddit.com/r/ZelixOS/" target="_blank" rel="noopener">Community</a></li>
+              <li><a href="about/">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="pp/">Privacy Policy</a></li>
+              <li><a href="br/">Report a Bug</a></li>
+            </ul>
+          </div>
+        </div>
       </div>
-    </div>
-    <div class="footer-bottom">
-      <p>© 2025 ZelixOS by CyberPlus Studios. All rights reserved.</p>
-      <div class="footer-social">
-        <a href="https://github.com/yasirpeker1212/zelixos/" target="_blank" rel="noopener" title="GitHub" aria-label="GitHub">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0024 12c0-6.63-5.37-12-12-12z"/></svg>
-        </a>
-        <a href="https://www.reddit.com/r/ZelixOS/" target="_blank" rel="noopener" title="Reddit" aria-label="Reddit">
-          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 0A12 12 0 000 12a12 12 0 0024 0A12 12 0 0012 0zm5.01 13.38c.15.36.23.75.23 1.14 0 2.82-3.28 5.1-7.32 5.1s-7.32-2.28-7.32-5.1c0-.4.08-.78.23-1.14a1.52 1.52 0 01-.65-1.25c0-.84.68-1.52 1.52-1.52.39 0 .74.15 1.01.39a9.1 9.1 0 014.59-1.41l.88-4.12a.31.31 0 01.37-.24l2.91.62a1.07 1.07 0 012.01.49 1.07 1.07 0 01-2.08.34l-2.56-.55-.78 3.65a9.06 9.06 0 014.5 1.4c.27-.25.63-.4 1.03-.4.84 0 1.52.68 1.52 1.52 0 .51-.26.97-.66 1.25zM8.28 14.12a1.07 1.07 0 100 2.14 1.07 1.07 0 000-2.14zm7.44 0a1.07 1.07 0 100 2.14 1.07 1.07 0 000-2.14zm-5.87 3.63c.18.18 1.03.72 2.15.72s1.97-.54 2.15-.72a.32.32 0 000-.45.32.32 0 00-.45 0c-.02.02-.72.48-1.7.48s-1.68-.46-1.7-.48a.32.32 0 00-.45 0 .32.32 0 000 .45z"/></svg>
-        </a>
-      </div>
+      <p class="copyright">© 2026 ZelixOS by CyberPlus Studios. All rights reserved.</p>
     </div>
   </footer>
 
-  <script src="animations.js"></script>
+  <dialog class="lightbox" aria-label="Image preview">
+    <button class="lightbox-close" type="button" aria-label="Close image preview">×</button>
+    <img class="lightbox-image" alt="">
+    <p class="lightbox-caption"></p>
+    <span class="lightbox-hint">Press Escape or click outside to close</span>
+  </dialog>
+
+  <script>
+    const lightbox = document.querySelector('.lightbox');
+    const lightboxImage = lightbox.querySelector('.lightbox-image');
+    const lightboxCaption = lightbox.querySelector('.lightbox-caption');
+
+    document.querySelectorAll('[data-lightbox]').forEach((link) => {
+      link.addEventListener('click', (event) => {
+        if (typeof lightbox.showModal !== 'function') return;
+        event.preventDefault();
+        lightboxImage.src = link.href;
+        lightboxImage.alt = link.querySelector('img').alt;
+        lightboxCaption.textContent = link.dataset.caption || lightboxImage.alt;
+        lightbox.showModal();
+      });
+    });
+
+    lightbox.querySelector('.lightbox-close').addEventListener('click', () => lightbox.close());
+    lightbox.addEventListener('cancel', (event) => {
+      event.preventDefault();
+      lightbox.close();
+    });
+    document.addEventListener('keydown', (event) => {
+      if (event.key === 'Escape' && lightbox.open) lightbox.close();
+    });
+    lightbox.addEventListener('click', (event) => {
+      if (event.target === lightbox) lightbox.close();
+    });
+    lightbox.addEventListener('close', () => {
+      lightboxImage.removeAttribute('src');
+    });
+  </script>
+
 </body>
 </html>

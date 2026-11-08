@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Documentation — ZelixOS</title>
+	<meta name="description" content="Installation, configuration, and troubleshooting documentation for ZelixOS.">
+	<meta name="theme-color" content="#0b0b0c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="docs.css">
+	<script src="docs-legacy-map.js"></script>
+	<script>if (location.hash) { const target = window.ZELIX_DOCS_LEGACY[decodeURIComponent(location.hash.slice(1))]; if (target && !target.startsWith("index.html#")) location.replace(target); }</script>
+	<script src="docs-search-index.js" defer></script>
+	<script src="docs.js" defer></script>
+	<script src="site-language.js" defer></script>
+</head>
+<body class="docs-page docs-landing">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+	<header class="site-header docs-header">
+		<div class="container docs-header-inner">
+			<a class="brand" href="https://zelixos.com/" aria-label="ZelixOS home">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+				<span>ZelixOS</span>
+			</a>
+			<nav class="docs-primary-nav" aria-label="Main">
+				<a class="docs-top-link" href="https://zelixos.com/">Home</a>
+				<a class="docs-top-link" href="https://zelixos.com/blog/">Blog</a>
+				<a class="docs-top-link" href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a>
+			</nav>
+			<div class="docs-header-actions">
+				<a class="btn btn-outline-strong btn-sm docs-download-link" href="https://zelixos.com/download/">Download</a>
+				<button class="docs-top-link site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button>
+				<button class="docs-mobile-toggle" type="button" aria-expanded="false" aria-controls="docs-sidebar">Menu</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="docs-shell">
+		<aside class="docs-sidebar" id="docs-sidebar" aria-label="Documentation navigation">
+
+			<nav class="docs-nav">
+				<p class="docs-nav-label">Documentation</p>
+				<a href="index.html#overview" class="docs-nav-link is-active">Overview</a>
+				<p class="docs-nav-label">Getting started</p>
+				<a href="docs-introduction.html#introduction" class="docs-nav-link">Why ZelixOS?</a>
+				<a href="docs-requirements.html#requirements" class="docs-nav-link">System requirements</a>
+				<a href="docs-download.html#download" class="docs-nav-link">Download and verify</a>
+				<p class="docs-nav-label">Installation</p>
+				<a href="docs-usb-prep.html#usb-prep" class="docs-nav-link">Prepare installation media</a>
+				<a href="docs-installer.html#installer" class="docs-nav-link">Zelix Installer</a>
+				<a href="docs-post-install.html#post-install" class="docs-nav-link">Post-installation</a>
+				<a href="docs-boot-recovery.html#boot-recovery" class="docs-nav-link">Boot and recovery</a>
+				<p class="docs-nav-label">Using ZelixOS</p>
+				<a href="docs-desktops.html#desktops" class="docs-nav-link">Desktop environments</a>
+				<a href="docs-desktop-plasma.html#desktop-plasma" class="docs-nav-link docs-nav-sublink">KDE Plasma</a>
+				<a href="docs-desktop-gnome.html#desktop-gnome" class="docs-nav-link docs-nav-sublink">GNOME</a>
+				<a href="docs-desktop-xfce.html#desktop-xfce" class="docs-nav-link docs-nav-sublink">Xfce</a>
+				<a href="docs-desktop-hyprland.html#desktop-hyprland" class="docs-nav-link docs-nav-sublink">Hyprland</a>
+				<a href="docs-desktop-sway.html#desktop-sway" class="docs-nav-link docs-nav-sublink">Sway</a>
+				<a href="docs-desktop-i3.html#desktop-i3" class="docs-nav-link docs-nav-sublink">i3</a>
+				<a href="docs-desktop-bspwm.html#desktop-bspwm" class="docs-nav-link docs-nav-sublink">bspwm</a>
+				<a href="docs-themes.html#themes" class="docs-nav-link">ZelixOS visual themes</a>
+				<a href="docs-app-install.html#app-install" class="docs-nav-link">Install applications</a>
+				<a href="docs-tools.html#tools" class="docs-nav-link">Zelix tools</a>
+				<a href="docs-packages.html#packages" class="docs-nav-link">Packages and AUR</a>
+				<a href="docs-maintenance.html#maintenance" class="docs-nav-link">System maintenance</a>
+				<a href="docs-hardware.html#hardware" class="docs-nav-link">Hardware and drivers</a>
+				<a href="docs-gaming.html#gaming" class="docs-nav-link">Gaming</a>
+				<a href="docs-troubleshooting.html#troubleshooting" class="docs-nav-link">Troubleshooting</a>
+			</nav>
+			<div class="docs-sidebar-footer"><span class="docs-status-dot" aria-hidden="true"></span>ZelixOS Aurora documentation</div>
+		</aside>
+
+		<main class="docs-main" id="main-content">
+			<div class="docs-content">
+<nav class="docs-breadcrumb hub-breadcrumb" aria-label="Breadcrumb"><a href="https://zelixos.com/">ZelixOS</a><span aria-hidden="true">/</span><a id="docs-breadcrumb-group" href="index.html">Documentation</a><span id="docs-breadcrumb-current" aria-current="page">Overview</span></nav>
+<section id="overview" class="hub-intro docs-section" data-title="Overview" data-group="Documentation">
+<div class="hub-search">			<div class="docs-search-wrap">
+				<label class="visually-hidden" for="docs-search">Search documentation</label>
+				<div class="docs-search-field">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+					<input id="docs-search" type="search" placeholder="Search documentation" autocomplete="off">
+					<kbd>Ctrl K</kbd>
+				</div>
+				<div class="docs-search-results" id="docs-search-results" role="listbox" aria-label="Search results" hidden></div>
+			</div></div>
+<div data-policy-language="en"><p class="hub-kicker">ZELIXOS · DOCUMENTATION</p><h1>Your guide to ZelixOS.</h1><p>Find the answers you need, from your first installation to your everyday desktop.</p></div>
+<div data-policy-language="tr" lang="tr" hidden><p class="hub-kicker">ZELIXOS · DOKÜMANTASYON</p><h1>ZelixOS rehberiniz.</h1><p>İlk kurulumdan günlük kullanıma kadar ihtiyacınız olan yanıtları bulun.</p></div>
+</section>
+<section class="hub-section"><div class="hub-section-heading"><div data-policy-language="en"><span>01 / EXPLORE</span><h2>User documentation</h2></div><div data-policy-language="tr" lang="tr" hidden><span>01 / KEŞFEDİN</span><h2>Kullanıcı dokümantasyonu</h2></div></div><div class="hub-grid"><a class="hub-card featured" href="docs-getting-started.html"><span data-policy-language="en"><h3>Getting started</h3><p>Everything you need before installing: requirements, downloads, and verification.</p></span><span data-policy-language="tr" lang="tr" hidden><h3>Başlangıç</h3><p>Kurulum öncesinde gereksinimler, indirme ve doğrulama.</p></span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-card featured" href="docs-installation.html"><span data-policy-language="en"><h3>Installation guide</h3><p>Prepare your USB drive and follow the installer step by step.</p></span><span data-policy-language="tr" lang="tr" hidden><h3>Kurulum rehberi</h3><p>USB belleğinizi hazırlayın ve kurulum adımlarını izleyin.</p></span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-card " href="docs-desktops.html"><span data-policy-language="en"><h3>Desktop environments</h3><p>Compare desktop choices and find the right guide for your workflow.</p></span><span data-policy-language="tr" lang="tr" hidden><h3>Masaüstü ortamları</h3><p>Masaüstü seçeneklerini karşılaştırın ve size uygun rehberi bulun.</p></span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-card " href="docs-system.html"><span data-policy-language="en"><h3>Using ZelixOS</h3><p>Applications, system tools, updates, hardware, and everyday tasks.</p></span><span data-policy-language="tr" lang="tr" hidden><h3>ZelixOS kullanımı</h3><p>Uygulamalar, sistem araçları, güncellemeler ve günlük kullanım.</p></span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-card " href="docs-troubleshooting.html"><span data-policy-language="en"><h3>Troubleshooting</h3><p>Practical checks for boot, networking, updates, and more.</p></span><span data-policy-language="tr" lang="tr" hidden><h3>Sorun giderme</h3><p>Açılış, ağ, güncelleme ve diğer sorunlar için pratik kontroller.</p></span><span class="hub-arrow" aria-hidden="true">↗</span></a></div></section><section class="hub-section hub-desktops"><div class="hub-section-heading"><div data-policy-language="en"><span>02 / FIND YOUR WORKSPACE</span><h2>Desktop guides</h2><p>Configuration, useful commands, and help for your chosen environment.</p></div><div data-policy-language="tr" lang="tr" hidden><span>02 / ÇALIŞMA ALANINIZ</span><h2>Masaüstü rehberleri</h2><p>Seçtiğiniz ortam için yapılandırma, yararlı komutlar ve yardım.</p></div></div><div class="hub-desktop-grid"><a class="hub-desktop-card" href="docs-desktop-plasma.html"><strong>KDE Plasma</strong><span data-policy-language="en">Flexible desktop</span><span data-policy-language="tr" lang="tr" hidden>Esnek masaüstü</span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-desktop-card" href="docs-desktop-gnome.html"><strong>GNOME</strong><span data-policy-language="en">Focused workspace</span><span data-policy-language="tr" lang="tr" hidden>Odaklı çalışma alanı</span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-desktop-card" href="docs-desktop-xfce.html"><strong>Xfce</strong><span data-policy-language="en">Classic desktop</span><span data-policy-language="tr" lang="tr" hidden>Klasik masaüstü</span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-desktop-card" href="docs-desktop-hyprland.html"><strong>Hyprland</strong><span data-policy-language="en">Dynamic tiling · Wayland</span><span data-policy-language="tr" lang="tr" hidden>Dinamik döşeme · Wayland</span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-desktop-card" href="docs-desktop-sway.html"><strong>Sway</strong><span data-policy-language="en">Tiling · Wayland</span><span data-policy-language="tr" lang="tr" hidden>Döşeme · Wayland</span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-desktop-card" href="docs-desktop-i3.html"><strong>i3</strong><span data-policy-language="en">Tiling · X11</span><span data-policy-language="tr" lang="tr" hidden>Döşeme · X11</span><span class="hub-arrow" aria-hidden="true">↗</span></a><a class="hub-desktop-card" href="docs-desktop-bspwm.html"><strong>bspwm</strong><span data-policy-language="en">Tiling · X11</span><span data-policy-language="tr" lang="tr" hidden>Döşeme · X11</span><span class="hub-arrow" aria-hidden="true">↗</span></a></div></section>
+				<footer class="docs-footer"><p>Documentation for ZelixOS Aurora</p><div><a href="https://zelixos.com/">ZelixOS home</a><a href="https://zelixos.com/blog/">Blog</a><a href="https://zelixos.com/download/">Downloads</a><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></div></footer>
+			</div>
+		</main>
+	</div>
+</body>
+</html>

@@ -1,0 +1,110 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>ZelixOS Blog</title>
+  <meta name="description" content="ZelixOS news, release notes, and project updates.">
+  <meta name="theme-color" content="#0b0b0c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+  <link rel="stylesheet" href="../style.css">
+  <link rel="stylesheet" href="blog.css">
+  <script src="../site-language.js" defer></script>
+  <script src="blog-posts.js" defer></script>
+  <script src="blog.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <header class="site-header">
+    <div class="container">
+      <a class="brand" href="https://zelixos.com/">
+        <svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="#f2f2f3" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="#f2f2f3" stroke-width="1.5" stroke-linecap="square"/></svg>
+        ZelixOS
+      </a>
+      <nav class="nav-links" aria-label="Main">
+        <a href="https://zelixos.com/">Home</a>
+        <a href="https://zelixos.com/index.html#features">Features</a>
+        <a href="https://zelixos.com/download/">Download</a>
+        <a href="https://docs.zelixos.com/">Wiki</a>
+        <a href="./" aria-current="page">Blog</a>
+        <a href="https://distrowatch.com/table.php?distribution=zelixos" target="_blank" rel="noopener">DistroWatch</a>
+        <a href="https://zelixos.com/about/">About</a>
+      </nav>
+      <div class="header-actions">
+        <a class="btn btn-outline-strong btn-sm" href="https://zelixos.com/download/">Download</a>
+        <button class="btn btn-outline btn-sm site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <section class="band page-head">
+      <div class="container stack gap-24">
+        <span class="pill">ZelixOS · Updates</span>
+        <h1 class="display display-md">News, releases, and updates.</h1>
+        <p class="lead blog-intro">Follow ZelixOS announcements and release notes. New posts can be added to the blog content file whenever there is something to share.</p>
+      </div>
+    </section>
+
+    <section class="band section-md" aria-label="Blog posts">
+      <div class="container stack gap-40">
+        <div id="blog-posts" class="blog-posts" aria-live="polite"></div>
+        <p id="blog-empty" class="blog-empty" hidden></p>
+      </div>
+    </section>
+
+    <section class="band band-alt section-md">
+      <div class="container cta-inner">
+        <div>
+          <h2 class="title title-sm">Get ZelixOS</h2>
+          <p class="muted">Browse available releases and installation information.</p>
+        </div>
+        <a class="btn btn-primary btn-lg" href="https://zelixos.com/download/">Download ZelixOS</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-about">
+          <strong>ZelixOS</strong>
+          <p>A modern, independent Arch Linux distribution built with care and precision by CyberPlus Studios.</p>
+        </div>
+        <div class="footer-cols">
+          <div>
+            <h4>Product</h4>
+            <ul>
+              <li><a href="https://zelixos.com/index.html#features">Features</a></li>
+              <li><a href="https://zelixos.com/download/">Download</a></li>
+              <li><a href="https://zelixos.com/index.html#specs">Requirements</a></li>
+              <li><a href="https://zelixos.com/index.html#gallery">Gallery</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Resources</h4>
+            <ul>
+              <li><a href="https://docs.zelixos.com/">Documentation</a></li>
+              <li><a href="./">Blog</a></li>
+              <li><a href="https://distrowatch.com/table.php?distribution=zelixos" target="_blank" rel="noopener">DistroWatch</a></li>
+              <li><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></li>
+              <li><a href="https://www.reddit.com/r/ZelixOS/" target="_blank" rel="noopener">Community</a></li>
+              <li><a href="https://zelixos.com/about/">About</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4>Legal</h4>
+            <ul>
+              <li><a href="https://zelixos.com/pp/">Privacy Policy</a></li>
+              <li><a href="https://zelixos.com/br/">Report a Bug</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <p class="copyright">© 2026 ZelixOS by CyberPlus Studios. All rights reserved.</p>
+    </div>
+  </footer>
+</body>
+</html>

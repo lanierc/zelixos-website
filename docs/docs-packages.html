@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Packages and AUR — ZelixOS Documentation</title>
+	<meta name="description" content="Installation, configuration, and troubleshooting documentation for ZelixOS.">
+	<meta name="theme-color" content="#0b0b0c">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+	<link rel="stylesheet" href="style.css">
+	<link rel="stylesheet" href="docs.css">
+	<script src="docs-search-index.js" defer></script>
+	<script src="docs.js" defer></script>
+	<script src="site-language.js" defer></script>
+</head>
+<body class="docs-page">
+  <a class="skip-link" href="#main-content">Skip to content</a>
+	<header class="site-header docs-header">
+		<div class="container docs-header-inner">
+			<a class="brand" href="https://zelixos.com/" aria-label="ZelixOS home">
+				<svg width="28" height="28" viewBox="0 0 28 28" fill="none" aria-hidden="true"><rect x="1" y="1" width="26" height="26" rx="4" stroke="currentColor" stroke-width="1.5"/><path d="M8 9h12L8 19h12" stroke="currentColor" stroke-width="1.5" stroke-linecap="square"/></svg>
+				<span>ZelixOS</span>
+			</a>
+			<nav class="docs-primary-nav" aria-label="Main">
+				<a class="docs-top-link" href="https://zelixos.com/">Home</a>
+				<a class="docs-top-link" href="https://zelixos.com/blog/">Blog</a>
+				<a class="docs-top-link" href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a>
+			</nav>
+			<div class="docs-header-actions">
+				<a class="btn btn-outline-strong btn-sm docs-download-link" href="https://zelixos.com/download/">Download</a>
+				<button class="docs-top-link site-language-toggle" type="button" data-site-language-toggle aria-label="English. Switch to Turkish" aria-pressed="false">EN</button>
+				<button class="docs-mobile-toggle" type="button" aria-expanded="false" aria-controls="docs-sidebar">Menu</button>
+			</div>
+		</div>
+	</header>
+
+	<div class="docs-shell">
+		<aside class="docs-sidebar" id="docs-sidebar" aria-label="Documentation navigation">
+			<div class="docs-search-wrap">
+				<label class="visually-hidden" for="docs-search">Search documentation</label>
+				<div class="docs-search-field">
+					<svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 4.5 4.5"/></svg>
+					<input id="docs-search" type="search" placeholder="Search documentation" autocomplete="off">
+					<kbd>Ctrl K</kbd>
+				</div>
+				<div class="docs-search-results" id="docs-search-results" role="listbox" aria-label="Search results" hidden></div>
+			</div>
+			<nav class="docs-nav">
+				<p class="docs-nav-label">Documentation</p>
+				<a href="index.html#overview" class="docs-nav-link is-active">Overview</a>
+				<p class="docs-nav-label">Getting started</p>
+				<a href="docs-introduction.html#introduction" class="docs-nav-link">Why ZelixOS?</a>
+				<a href="docs-requirements.html#requirements" class="docs-nav-link">System requirements</a>
+				<a href="docs-download.html#download" class="docs-nav-link">Download and verify</a>
+				<p class="docs-nav-label">Installation</p>
+				<a href="docs-usb-prep.html#usb-prep" class="docs-nav-link">Prepare installation media</a>
+				<a href="docs-installer.html#installer" class="docs-nav-link">Zelix Installer</a>
+				<a href="docs-post-install.html#post-install" class="docs-nav-link">Post-installation</a>
+				<a href="docs-boot-recovery.html#boot-recovery" class="docs-nav-link">Boot and recovery</a>
+				<p class="docs-nav-label">Using ZelixOS</p>
+				<a href="docs-desktops.html#desktops" class="docs-nav-link">Desktop environments</a>
+				<a href="docs-desktop-plasma.html#desktop-plasma" class="docs-nav-link docs-nav-sublink">KDE Plasma</a>
+				<a href="docs-desktop-gnome.html#desktop-gnome" class="docs-nav-link docs-nav-sublink">GNOME</a>
+				<a href="docs-desktop-xfce.html#desktop-xfce" class="docs-nav-link docs-nav-sublink">Xfce</a>
+				<a href="docs-desktop-hyprland.html#desktop-hyprland" class="docs-nav-link docs-nav-sublink">Hyprland</a>
+				<a href="docs-desktop-sway.html#desktop-sway" class="docs-nav-link docs-nav-sublink">Sway</a>
+				<a href="docs-desktop-i3.html#desktop-i3" class="docs-nav-link docs-nav-sublink">i3</a>
+				<a href="docs-desktop-bspwm.html#desktop-bspwm" class="docs-nav-link docs-nav-sublink">bspwm</a>
+				<a href="docs-themes.html#themes" class="docs-nav-link">ZelixOS visual themes</a>
+				<a href="docs-app-install.html#app-install" class="docs-nav-link">Install applications</a>
+				<a href="docs-tools.html#tools" class="docs-nav-link">Zelix tools</a>
+				<a href="docs-packages.html#packages" class="docs-nav-link">Packages and AUR</a>
+				<a href="docs-maintenance.html#maintenance" class="docs-nav-link">System maintenance</a>
+				<a href="docs-hardware.html#hardware" class="docs-nav-link">Hardware and drivers</a>
+				<a href="docs-gaming.html#gaming" class="docs-nav-link">Gaming</a>
+				<a href="docs-troubleshooting.html#troubleshooting" class="docs-nav-link">Troubleshooting</a>
+			</nav>
+			<div class="docs-sidebar-footer"><span class="docs-status-dot" aria-hidden="true"></span>ZelixOS Aurora documentation</div>
+		</aside>
+
+		<main class="docs-main" id="main-content">
+			<div class="docs-content">
+				<nav class="docs-breadcrumb" aria-label="Breadcrumb"><a href="https://zelixos.com/">ZelixOS</a><span aria-hidden="true">/</span><a href="index.html#overview">Documentation</a><span aria-hidden="true">/</span><a id="docs-breadcrumb-group" href="index.html#overview">Overview</a><span aria-hidden="true">/</span><span id="docs-breadcrumb-current" aria-current="page">Overview</span></nav>
+				<section class="docs-section" id="packages" data-title="Packages and AUR" data-group="Using ZelixOS">
+					<p class="eyebrow">Software</p><h2>Packages and AUR</h2>
+					<p>Use Zelix Hello → Software for apps listed in its catalog. For other official repository packages, use pacman. An AUR helper is optional: the Zelix Installer asks whether to install one. Do not assume that Yay or Paru is present on every installation.</p>
+					<h3 class="docs-subheading">Official repositories</h3>
+					<p>Keep the entire system current when refreshing package databases. Run these commands in a terminal; replace <code>package-name</code> with an actual repository package name.</p>
+					<div class="docs-code"><code>sudo pacman -Syu</code></div>
+					<div class="docs-code"><code>pacman -Ss package-name</code></div>
+					<div class="docs-code"><code>sudo pacman -S package-name</code></div>
+					<div class="docs-callout docs-callout-warning"><strong>Avoid partial upgrades</strong><p>Refreshing package databases without upgrading the whole system can cause an unsupported partial upgrade. Avoid running pacman -Sy on its own. Use pacman -Syu for a complete update.</p></div>
+					<h3 class="docs-subheading">Optional AUR helper</h3>
+					<p>The AUR contains user-maintained build recipes. If you selected an AUR helper in the installer, run <code>command -v yay</code> or <code>command -v paru</code> to find which helper is installed. Review a package's build files and source before installing it. Run AUR helpers as your regular user, without <code>sudo</code>.</p>
+					<div class="docs-code"><code>command -v yay; command -v paru</code></div>
+					<p>If neither command returns a path, you did not install one or it is unavailable in your current environment. Official packages remain available through pacman.</p>
+					<div data-policy-language="en">
+						<article class="docs-guide"><h3>Find and inspect a package</h3><p>Search repository package names and descriptions with <code>pacman -Ss</code>. Before installing, use <code>pacman -Si</code> to see its repository, version, dependencies, and description. To inspect an installed package, use <code>pacman -Qi</code>. Replace the example package with the name you found.</p><div class="docs-code"><code>pacman -Ss firefox</code></div><div class="docs-code"><code>pacman -Si firefox</code></div><div class="docs-code"><code>pacman -Qi firefox</code></div></article>
+						<article class="docs-guide"><h3>Install, remove, and list packages</h3><p><code>pacman -S</code> installs a repository package. <code>pacman -R</code> removes the named package; <code>pacman -Rs</code> also removes dependencies that are no longer needed by other packages. Read the transaction summary before confirming removal. <code>pacman -Qe</code> lists explicitly installed packages. These commands affect only pacman packages, not Flatpaks.</p><div class="docs-code"><code>sudo pacman -S firefox</code></div><div class="docs-code"><code>sudo pacman -R firefox</code></div><div class="docs-code"><code>pacman -Qe</code></div></article>
+						<article class="docs-guide"><h3>Use the helper selected in the installer</h3><p>The AUR is community-maintained. Check whether <code>yay</code> or <code>paru</code> exists before using its commands. Search with the helper you installed, inspect the build recipe and sources, and run it as your regular user. The examples below are alternatives, not commands to run together. If you declined the helper during installation, the official repositories and Zelix Hello still work.</p><div class="docs-code"><code>yay -Ss package-name</code></div><div class="docs-code"><code>paru -Ss package-name</code></div><p>When AUR packages break after a system update, check the helper's output and the package's current build instructions; AUR packages may need rebuilding. Never run a helper with <code>sudo</code>.</p></article>
+						<p><a href="https://wiki.archlinux.org/title/Pacman" target="_blank" rel="noopener">ArchWiki pacman reference</a> · <a href="https://wiki.archlinux.org/title/Arch_User_Repository" target="_blank" rel="noopener">ArchWiki AUR reference</a></p>
+					</div>
+					<div data-policy-language="tr" hidden>
+						<article class="docs-guide"><h3>Paket arama ve inceleme</h3><p>Depo paketlerinin adlarını ve açıklamalarını <code>pacman -Ss</code> ile arayın. Yüklemeden önce <code>pacman -Si</code> ile depoyu, sürümü, bağımlılıkları ve açıklamayı görün. Kurulu paketi incelemek için <code>pacman -Qi</code> kullanın. Örnekteki paket adını bulduğunuz adla değiştirin.</p><div class="docs-code"><code>pacman -Ss firefox</code></div><div class="docs-code"><code>pacman -Si firefox</code></div><div class="docs-code"><code>pacman -Qi firefox</code></div></article>
+						<article class="docs-guide"><h3>Paket yükleme, kaldırma ve listeleme</h3><p><code>pacman -S</code> depo paketini yükler. <code>pacman -R</code> adı verilen paketi kaldırır; <code>pacman -Rs</code> başka paketlerin kullanmadığı bağımlılıklarını da kaldırır. Kaldırmayı onaylamadan önce işlem özetini okuyun. <code>pacman -Qe</code> açıkça yüklenen paketleri listeler. Bu komutlar Flatpak’ları değil, yalnız pacman paketlerini etkiler.</p><div class="docs-code"><code>sudo pacman -S firefox</code></div><div class="docs-code"><code>sudo pacman -R firefox</code></div><div class="docs-code"><code>pacman -Qe</code></div></article>
+						<article class="docs-guide"><h3>Yükleyicide seçilen yardımcıyı kullanma</h3><p>AUR, topluluk tarafından yönetilir. Komutlarını kullanmadan önce <code>yay</code> veya <code>paru</code> yüklü mü kontrol edin. Kurduğunuz yardımcıyla arama yapın, derleme tarifini ve kaynakları inceleyin; yardımcıyı normal kullanıcı olarak çalıştırın. Aşağıdaki örnekler alternatiftir, birlikte çalıştırılmaz. Kurulumda yardımcıyı seçmediyseniz resmî depolar ve Zelix Hello yine çalışır.</p><div class="docs-code"><code>yay -Ss package-name</code></div><div class="docs-code"><code>paru -Ss package-name</code></div><p>AUR paketleri sistem güncellemesi sonrası bozulursa yardımcının çıktısını ve paketin güncel derleme yönergelerini inceleyin; yeniden derleme gerekebilir. Yardımcıyı <code>sudo</code> ile çalıştırmayın.</p></article>
+						<p><a href="https://wiki.archlinux.org/title/Pacman" target="_blank" rel="noopener">ArchWiki pacman başvurusu</a> · <a href="https://wiki.archlinux.org/title/Arch_User_Repository" target="_blank" rel="noopener">ArchWiki AUR başvurusu</a></p>
+					</div>
+				</section>
+				<footer class="docs-footer"><p>Documentation for ZelixOS Aurora</p><div><a href="https://zelixos.com/">ZelixOS home</a><a href="https://zelixos.com/blog/">Blog</a><a href="https://zelixos.com/download/">Downloads</a><a href="https://github.com/ZelixOS" target="_blank" rel="noopener">GitHub</a></div></footer>
+			</div>
+		</main>
+	</div>
+</body>
+</html>
