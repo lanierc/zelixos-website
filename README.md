@@ -1,40 +1,33 @@
-<div align="center">
+# ZelixOS Web Sitesi
 
-# ZelixOS Website
+ZelixOS'un tanıtım, indirme ve dokümantasyon sitesi. HTML, CSS ve JavaScript kullanır; derleme adımı gerektirmez. İçerikler Türkçe ve İngilizce sunulur.
 
-The official website and documentation for ZelixOS, an Arch Linux based distribution.
+## Yerel önizleme
 
-[Visit the website](https://zelixos.com/) · [Download](https://zelixos.com/download/) · [Documentation](https://zelixos.com/docs/)
+Depo dizininde:
 
-<img src="images/Zelix%20Desktop%20SS.png" alt="ZelixOS desktop" width="800">
-
-</div>
-
-## About
-
-This repository contains the ZelixOS website, including download information, desktop screenshots, release articles, and guides for installing and using the system. The site is available in English and Turkish.
-
-## Project structure
-
-| Path | Contents |
-| --- | --- |
-| `index.html` | Home page |
-| `about/`, `download/`, `gallery/` | Project information, downloads, and screenshots |
-| `blog/` | Release articles and blog assets |
-| `docs/` | Installation, desktop, and troubleshooting guides |
-| `images/` | Website images |
-| `style.css`, `site-language.js` | Shared styles and language support |
-
-## Local development
-
-The site uses HTML, CSS, and JavaScript and does not require a build step. To preview it locally, run a static server from the repository root:
-
-```sh
+```bash
 python3 -m http.server 8000
 ```
 
-Open `http://localhost:8000/` in your browser.
+Tarayıcıda `http://localhost:8000/` adresini açın.
 
-## Contributing
+## Dizinler
 
-Issues and pull requests are welcome. Please keep changes consistent with the existing design and update both language versions where applicable.
+| Yol | İçerik |
+| --- | --- |
+| `index.html` | Ana sayfa |
+| `about/` | Proje bilgileri |
+| `download/` | İndirme sayfası |
+| `gallery/` | Ekran görüntüleri |
+| `blog/` | Yazılar ve sürüm duyuruları |
+| `docs/` | Kurulum ve kullanım belgeleri |
+| `images/` | Görseller |
+| `style.css` | Ortak stiller |
+| `site-language.js` | Dil desteği |
+
+## Katkı
+
+İçerik değişikliklerinde iki dili de güncelleyin. Bağlantıları, görsel yollarını ve mobil görünümü yerel önizlemede kontrol edin.
+
+[Yayındaki site](https://zelixos.com/)
