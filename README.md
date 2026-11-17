@@ -1,33 +1,33 @@
-# ZelixOS Web Sitesi
+# ZelixOS Website
 
-ZelixOS'un tanıtım, indirme ve dokümantasyon sitesi. HTML, CSS ve JavaScript kullanır; derleme adımı gerektirmez. İçerikler Türkçe ve İngilizce sunulur.
+The ZelixOS website for project information, downloads, and documentation. It uses HTML, CSS, and JavaScript with no build step. Content is available in English and Turkish.
 
-## Yerel önizleme
+## Local preview
 
-Depo dizininde:
+From the repository directory:
 
 ```bash
 python3 -m http.server 8000
 ```
 
-Tarayıcıda `http://localhost:8000/` adresini açın.
+Open `http://localhost:8000/` in your browser.
 
-## Dizinler
+## Project structure
 
-| Yol | İçerik |
+| Path | Contents |
 | --- | --- |
-| `index.html` | Ana sayfa |
-| `about/` | Proje bilgileri |
-| `download/` | İndirme sayfası |
-| `gallery/` | Ekran görüntüleri |
-| `blog/` | Yazılar ve sürüm duyuruları |
-| `docs/` | Kurulum ve kullanım belgeleri |
-| `images/` | Görseller |
-| `style.css` | Ortak stiller |
-| `site-language.js` | Dil desteği |
+| `index.html` | Home page |
+| `about/` | Project information |
+| `download/` | Downloads |
+| `gallery/` | Screenshots |
+| `blog/` | Articles and release announcements |
+| `docs/` | Installation and usage documentation |
+| `images/` | Images |
+| `style.css` | Shared styles |
+| `site-language.js` | Language support |
 
-## Katkı
+## Contributing
 
-İçerik değişikliklerinde iki dili de güncelleyin. Bağlantıları, görsel yollarını ve mobil görünümü yerel önizlemede kontrol edin.
+Update both languages when changing content. Check links, image paths, and the mobile layout in the local preview.
 
-[Yayındaki site](https://zelixos.com/)
+[Live website](https://zelixos.com/)
